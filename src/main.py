@@ -21,6 +21,7 @@ class DatastrikePythonProcessing:
         
     def on_callback_test(self, topic, data):
         print("message receive : ", topic, data)
+        print("a")
 
     def run(self):
 
