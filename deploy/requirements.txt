@@ -1,1 +1,2 @@
 kafka-python==2.0.2
+pandas==2.1.4
