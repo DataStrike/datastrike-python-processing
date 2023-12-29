@@ -1,16 +1,17 @@
 # from src.log_analyser.character import Character
+from objects.object import Object
+from objects.character import Character
 
 
-class Player():
+class Player(Object):
     
     def __init__(self, name, team) -> None:
         
-        self.name = name
-        self.team = team
+        data_schema = {"name": str, 
+                       "characters": list}
         
-        self.character = []
+        super().__init__(data_schema, **kwargs)
         
-        self.ultimate = 0
             
     def add_event(self, event):
         pass

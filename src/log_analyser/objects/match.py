@@ -23,15 +23,15 @@ class Match(Object):
     def add_round(self):
         
         teams = []
-        teams.append(Team.from_json({"name":self.team1_name, "players": []}))
-        teams.append(Team.from_json({"name":self.team2_name, "players": []}))
+        teams.append(Team.from_json({"name":self.team1_name, "players": {}}))
+        teams.append(Team.from_json({"name":self.team2_name, "players": {}}))
         self.rounds.append(Round.from_json({"teams": teams}))
         
         self.actual_round += 1
         
     def add_player(self, data):
         
-        for team in self.rounds[self.actual_round].teams:
+        for name_team, team in self.rounds[self.actual_round].teams:
             
             for player in team.players:
                 
@@ -41,5 +41,13 @@ class Match(Object):
         self.rounds[self.actual_round].teams[data["team_number"]].add_player(data)
         
                     
-            
+    def add_character(self, data):
         
+        for team in self.rounds[self.actual_round].teams:
+            for player in team.players:
+                for character in player.characters:
+                
+                    if character.name == data["name_character"]:
+                        return -1
+        
+        self.rounds[self.actual_round].teams[data["team_number"]].player["player_name"].add_character(data)

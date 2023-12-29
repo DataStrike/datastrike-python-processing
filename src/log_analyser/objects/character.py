@@ -6,7 +6,9 @@ class Character(Object):
     def __init__(self, **kwargs):
         
         data_schema = {"name": str, 
-                       "damage": int}
+                       "damage": int, 
+                       "heal": int,
+                       "ultimate_use": int}
         
         super().__init__(data_schema, **kwargs)
     
