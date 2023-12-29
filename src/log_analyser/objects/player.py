@@ -1,7 +1,7 @@
-from src.log_analyser.character import Character
+# from src.log_analyser.character import Character
 
 
-class Player:
+class Player():
     
     def __init__(self, name, team) -> None:
         

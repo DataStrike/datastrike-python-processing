@@ -8,10 +8,11 @@ class Object:
     
         for key, value in kwargs.items():
             if key in class_model:
+                print(type(value), class_model[key])
                 if type(value) == class_model[key]:
                     setattr(self, key, value)
                 else:
-                    print("type of key {} is invalid".format(key))
+                    print("type of key {} is invalid".format(class_model, key))
                     self.from_json_ok = False
             else:
                 print("key {} not find in dataschema".format(key))
