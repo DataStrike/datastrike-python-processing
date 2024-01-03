@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class Object:
     def __init__(self, class_model, **kwargs):   
@@ -41,7 +41,15 @@ class Object:
 
         return json.dumps(dict_class)
 
+    def convert_timefile_to_datetime(self, time_string):
 
+
+        # Utilisation de strptime pour convertir la chaîne en datetime
+        time_delta = datetime.strptime(time_string, "[%H:%M:%S]")
+
+        # Conversion en timedelta (représentation de la durée)
+        duration = timedelta(hours=time_delta.hour, minutes=time_delta.minute, seconds=time_delta.second)
+        return duration
 
     @classmethod
     def from_json(self, data):

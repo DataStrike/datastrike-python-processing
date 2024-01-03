@@ -9,6 +9,7 @@ class Character(Object):
         
         super().__init__(data_schema, **kwargs)
 
+        self.played_time = []
         self.stats = {}
         self.kills = []
         self.deads = []
@@ -17,10 +18,13 @@ class Character(Object):
         self.ultimate_charged = []
         self.ultimate_use = []
 
+    def add_played_time(self, data):
+        self.played_time.append(data)
+
     def add_kill(self, data):
         self.kills.append(data)
 
-    def add_dead(self, data):
+    def add_death(self, data):
         self.deads.append(data)
 
     def add_offensive_assist(self, data):
