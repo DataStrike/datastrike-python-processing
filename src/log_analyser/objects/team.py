@@ -13,4 +13,4 @@ class Team(Object):
     
     def add_player(self, data):
         
-        self.players.append(Player.from_json(data))
+        self.players[data["name"]] = Player.from_json(data)

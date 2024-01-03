@@ -3,51 +3,49 @@ from objects.round import Round
 from objects.team import Team
 from datetime import datetime
 
+
 class Match(Object):
-    
+
     def __init__(self, **kwargs):
-        
-        data_schema = {"rounds": list, 
+
+        data_schema = {"rounds": list,
                        "date": datetime,
                        "map_name": str,
                        "map_type": str,
                        "team1_name": str,
                        "team2_name": str
                        }
-        
+
         super().__init__(data_schema, **kwargs)
-        
+
         self.actual_round = -1
-        
-        
+
     def add_round(self):
-        
-        teams = []
-        teams.append(Team.from_json({"name":self.team1_name, "players": {}}))
-        teams.append(Team.from_json({"name":self.team2_name, "players": {}}))
+
+        teams = {}
+        teams[self.team1_name] = Team.from_json({"name": self.team1_name, "players": {}})
+        teams[self.team2_name] = Team.from_json({"name": self.team2_name, "players": {}})
         self.rounds.append(Round.from_json({"teams": teams}))
-        
+
         self.actual_round += 1
-        
+
     def add_player(self, data):
-        
-        for name_team, team in self.rounds[self.actual_round].teams:
-            
-            for player in team.players:
-                
-                if player.name == data["name"]:
-                    return -1
-        
-        self.rounds[self.actual_round].teams[data["team_number"]].add_player(data)
-        
-                    
+
+        if data["player_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players:
+            print("player already exist")
+            self.add_character(data)
+            return -1
+        else:
+            self.rounds[self.actual_round].teams[data["team_name"]].add_player(
+                {"name": data["player_name"], "characters": {}})
+            self.add_character(data)
+            return 0
+
+
     def add_character(self, data):
-        
-        for team in self.rounds[self.actual_round].teams:
-            for player in team.players:
-                for character in player.characters:
-                
-                    if character.name == data["name_character"]:
-                        return -1
-        
-        self.rounds[self.actual_round].teams[data["team_number"]].player["player_name"].add_character(data)
+
+        if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
+            print("character already exist")
+            return -2
+        else:
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"]})
