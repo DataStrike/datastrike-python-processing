@@ -1,0 +1,547 @@
+[00:00:00] ,match_start,0,Oasis,Point de contrôle,Équipe 1,Équipe 2
+[00:00:00] ,objective_updated,0,1,0,1
+[00:00:00] ,round_start,0,1,0,0,0,1
+[00:00:10] ,hero_spawn,0,Équipe 1,Salter,Symmetra,0,0
+[00:00:10] ,hero_spawn,0,Équipe 2,Morbcchi,Winston,0,0
+[00:00:15] ,hero_spawn,0,Équipe 1,GGvador69,Mauga,0,0
+[00:00:18] ,hero_spawn,0,Équipe 1,TeralFox,Kiriko,0,0
+[00:00:18] ,hero_spawn,0,Équipe 2,Mekky,Sombra,0,0
+[00:00:18] ,hero_spawn,0,Équipe 2,MrSully,Zenyatta,0,0
+[00:00:19] ,hero_swap,0,Équipe 1,Salter,Ana,Symmetra,0
+[00:00:20] ,hero_swap,0,Équipe 1,GGvador69,Écho,Mauga,0
+[00:00:29] ,hero_swap,0,Équipe 1,GGvador69,Genji,Écho,0
+[00:00:31] ,hero_spawn,0,Équipe 1,Nazakoh,Symmetra,0,0
+[00:00:36] ,hero_swap,0,Équipe 2,Mekky,Symmetra,Sombra,0
+[00:00:39] ,hero_swap,0,Équipe 2,MrSully,Ange,Zenyatta,0
+[00:00:41] ,hero_spawn,0,Équipe 2,Mikow,Ana,0,0
+[00:00:41] ,hero_spawn,0,Équipe 1,Coldi,Mauga,0,0
+[00:00:41] ,hero_spawn,0,Équipe 2,NafK,Mei,0,0
+[00:00:42] ,hero_swap,0,Équipe 1,GGvador69,Sojourn,Genji,0
+[00:00:48] ,hero_swap,0,Équipe 2,NafK,Pharah,Mei,0
+[00:01:44] ,setup_complete,0,1,29.99
+[00:01:47] ,hero_swap,3.12,Équipe 2,Mekky,Sombra,Symmetra,3.12
+[00:01:48] ,hero_swap,3.94,Équipe 1,Nazakoh,Faucheur,Symmetra,3.94
+[00:02:08] ,kill,23.81,Équipe 2,NafK,Pharah,Équipe 1,Nazakoh,Faucheur,Tir principal,100,0,0
+[00:02:08] ,offensive_assist,23.97,Équipe 2,MrSully,Ange,0
+[00:02:08] ,defensive_assist,23.97,Équipe 2,MrSully,Ange,0
+[00:02:08] ,offensive_assist,23.98,Équipe 2,Mekky,Sombra,0
+[00:02:08] ,defensive_assist,24.02,Équipe 2,Mikow,Ana,0
+[00:02:18] ,hero_swap,33.81,Équipe 1,Nazakoh,Cassidy,Faucheur,29.87
+[00:02:18] ,kill,34.26,Équipe 2,NafK,Pharah,Équipe 1,Salter,Ana,Tir principal,50.65,0,0
+[00:02:18] ,offensive_assist,34.30,Équipe 2,MrSully,Ange,0
+[00:02:23] ,point_progress,39.54,1,Toutes les équipes,1,33.55
+[00:02:26] ,kill,42.40,Équipe 2,NafK,Pharah,Équipe 1,GGvador69,Sojourn,Tir principal,15.86,0,0
+[00:02:27] ,offensive_assist,42.78,Équipe 2,MrSully,Ange,0
+[00:02:27] ,defensive_assist,42.78,Équipe 2,MrSully,Ange,0
+[00:02:29] ,kill,45.58,Équipe 1,Coldi,Mauga,Équipe 2,Morbcchi,Winston,0,0.91,0,0
+[00:02:29] ,defensive_assist,45.70,Équipe 1,Coldi,Mauga,0
+[00:02:29] ,defensive_assist,45.74,Équipe 1,TeralFox,Kiriko,0
+[00:02:30] ,kill,45.94,Équipe 2,NafK,Pharah,Équipe 1,TeralFox,Kiriko,Tir principal,2.14,0,0
+[00:02:30] ,offensive_assist,46.08,Équipe 2,MrSully,Ange,0
+[00:02:30] ,defensive_assist,46.08,Équipe 2,MrSully,Ange,0
+[00:02:30] ,defensive_assist,46.11,Équipe 2,Mikow,Ana,0
+[00:02:36] ,mercy_rez,52.14,Équipe 2,MrSully,Ange,Équipe 2,Morbcchi,Winston
+[00:02:37] ,kill,53.31,Équipe 1,Nazakoh,Cassidy,Équipe 2,NafK,Pharah,Tir principal,69.32,0,0
+[00:02:43] ,point_progress,59.53,1,Toutes les équipes,1,33.60
+[00:02:45] ,point_progress,60.86,1,Toutes les équipes,1,66.80
+[00:02:46] ,objective_captured,62.19,1,Équipe 2,1,0,0.01,0
+[00:02:48] ,kill,63.85,Équipe 1,Nazakoh,Cassidy,Équipe 2,Mekky,Sombra,Tir principal,130,Vrai,0
+[00:02:55] ,point_progress,70.89,1,Équipe 1,1,33.97
+[00:02:55] ,kill,71.52,Équipe 1,Salter,Ana,Équipe 2,MrSully,Ange,Tir principal,24.16,0,0
+[00:03:00] ,kill,75.81,Équipe 1,Nazakoh,Cassidy,Équipe 2,Morbcchi,Winston,Tir secondaire,29.39,0,0
+[00:03:00] ,point_progress,76.13,1,Équipe 1,1,66.74
+[00:03:00] ,offensive_assist,76.19,Équipe 1,Salter,Ana,0
+[00:03:00] ,defensive_assist,76.19,Équipe 1,Salter,Ana,0
+[00:03:00] ,defensive_assist,76.25,Équipe 1,TeralFox,Kiriko,0
+[00:03:00] ,offensive_assist,76.27,Équipe 1,Coldi,Mauga,0
+[00:03:01] ,point_progress,77.57,1,Équipe 2,1,0
+[00:03:01] ,objective_captured,77.57,1,Équipe 1,1,0,12.83,0
+[00:03:02] ,kill,78.73,Équipe 1,GGvador69,Sojourn,Équipe 2,Mikow,Ana,Tir secondaire,118.28,0,0
+[00:03:10] ,hero_swap,85.80,Équipe 2,Morbcchi,D.Va,Winston,85.80
+[00:03:16] ,ultimate_charged,92.01,Équipe 2,NafK,Pharah,0,1
+[00:03:33] ,ultimate_charged,108.84,Équipe 2,Mikow,Ana,0,1
+[00:03:36] ,ultimate_start,112.14,Équipe 2,NafK,Pharah,0,1
+[00:03:37] ,kill,112.91,Équipe 2,NafK,Pharah,Équipe 1,Salter,Ana,Capacité ultime,21.38,0,0
+[00:03:37] ,offensive_assist,113.26,Équipe 2,MrSully,Ange,0
+[00:03:37] ,offensive_assist,113.27,Équipe 2,Mekky,Sombra,0
+[00:03:38] ,kill,114.15,Équipe 1,GGvador69,Sojourn,Équipe 2,NafK,Pharah,Tir secondaire,6,0,0
+[00:03:38] ,ultimate_end,114.15,Équipe 2,NafK,Pharah,0,1
+[00:03:42] ,kill,118.39,Équipe 2,Morbcchi,D.Va,Équipe 1,Nazakoh,Cassidy,0,5.46,Vrai,0
+[00:03:42] ,kill,118.75,Équipe 1,GGvador69,Sojourn,Équipe 2,Mekky,Sombra,Capacité 2,9.48,0,0
+[00:03:45] ,point_progress,121.19,1,Équipe 2,1,33.88
+[00:03:46] ,ultimate_charged,122.22,Équipe 1,Coldi,Mauga,0,1
+[00:03:47] ,ultimate_start,123.16,Équipe 1,Coldi,Mauga,0,1
+[00:03:48] ,kill,124.17,Équipe 1,Coldi,Mauga,Équipe 2,Mikow,Ana,0,1.07,0,0
+[00:03:49] ,ultimate_charged,124.79,Équipe 1,Nazakoh,Cassidy,0,1
+[00:03:49] ,kill,124.87,Équipe 1,GGvador69,Sojourn,Équipe 2,MrSully,Ange,Tir secondaire,128,Vrai,0
+[00:03:54] ,ultimate_charged,129.99,Équipe 1,TeralFox,Kiriko,0,1
+[00:03:55] ,ultimate_end,131.61,Équipe 1,Coldi,Mauga,0,1
+[00:03:57] ,ultimate_charged,133.12,Équipe 2,Mekky,Sombra,0,1
+[00:03:58] ,kill,134.38,Équipe 1,Coldi,Mauga,Équipe 2,Morbcchi,D.Va,Mêlée,6,0,0
+[00:03:58] ,defensive_assist,134.52,Équipe 1,Coldi,Mauga,0
+[00:03:58] ,defensive_assist,134.54,Équipe 1,TeralFox,Kiriko,0
+[00:03:59] ,hero_swap,134.99,Équipe 2,NafK,Genji,Pharah,134.99
+[00:04:19] ,ultimate_charged,155.01,Équipe 2,MrSully,Ange,0,1
+[00:04:23] ,ultimate_charged,159.03,Équipe 1,Salter,Ana,0,1
+[00:04:27] ,ultimate_charged,163.00,Équipe 1,GGvador69,Sojourn,0,1
+[00:04:29] ,ultimate_start,165.42,Équipe 2,MrSully,Ange,0,1
+[00:04:33] ,ultimate_start,169.35,Équipe 2,Mekky,Sombra,0,1
+[00:04:37] ,ultimate_start,173.42,Équipe 1,TeralFox,Kiriko,0,1
+[00:04:37] ,ultimate_end,173.77,Équipe 1,TeralFox,Kiriko,0,1
+[00:04:38] ,ultimate_start,173.87,Équipe 1,TeralFox,Kiriko,0,1
+[00:04:38] ,ultimate_end,174.36,Équipe 2,Mekky,Sombra,0,1
+[00:04:38] ,kill,174.68,Équipe 1,GGvador69,Sojourn,Équipe 2,Mekky,Sombra,Tir principal,6.00,0,0
+[00:04:42] ,kill,178.13,Équipe 1,TeralFox,Kiriko,Équipe 2,NafK,Genji,0,15,0,0
+[00:04:42] ,offensive_assist,178.16,Équipe 1,Coldi,Mauga,0
+[00:04:42] ,defensive_assist,178.27,Équipe 1,TeralFox,Kiriko,0
+[00:04:44] ,ultimate_end,180.41,Équipe 2,MrSully,Ange,0,1
+[00:04:45] ,kill,181.78,Équipe 1,Nazakoh,Cassidy,Équipe 2,Mikow,Ana,Tir principal,36.32,0,0
+[00:04:46] ,offensive_assist,181.94,Équipe 1,Coldi,Mauga,0
+[00:04:46] ,offensive_assist,182.03,Équipe 1,TeralFox,Kiriko,0
+[00:04:48] ,ultimate_end,184.61,Équipe 1,TeralFox,Kiriko,0,1
+[00:04:49] ,ultimate_start,185.76,Équipe 1,Nazakoh,Cassidy,0,1
+[00:04:51] ,kill,187.35,Équipe 1,Nazakoh,Cassidy,Équipe 2,MrSully,Ange,Capacité ultime,42,0,0
+[00:04:51] ,defensive_assist,187.67,Équipe 1,Salter,Ana,0
+[00:04:51] ,ultimate_end,187.68,Équipe 1,Nazakoh,Cassidy,0,1
+[00:04:53] ,ultimate_start,189.31,Équipe 1,Salter,Ana,0,1
+[00:04:55] ,ultimate_start,191.43,Équipe 1,GGvador69,Sojourn,0,1
+[00:05:00] ,ultimate_start,195.93,Équipe 2,Mikow,Ana,0,1
+[00:05:01] ,ultimate_end,197.45,Équipe 1,Salter,Ana,0,1
+[00:05:02] ,hero_swap,198.42,Équipe 2,MrSully,Lúcio,Ange,198.42
+[00:05:03] ,kill,199.38,Équipe 1,GGvador69,Sojourn,Équipe 2,NafK,Genji,Capacité ultime,22.50,0,0
+[00:05:03] ,ultimate_end,199.40,Équipe 2,Mikow,Ana,0,1
+[00:05:04] ,defensive_assist,199.85,Équipe 1,TeralFox,Kiriko,0
+[00:05:04] ,ultimate_end,200.17,Équipe 1,GGvador69,Sojourn,0,1
+[00:05:08] ,kill,204.39,Équipe 1,Nazakoh,Cassidy,Équipe 2,Morbcchi,D.Va,Tir principal,50,0,0
+[00:05:08] ,kill,204.57,Équipe 2,MrSully,Lúcio,Équipe 1,GGvador69,Sojourn,Tir principal,3.50,0,0
+[00:05:12] ,kill,208.04,Équipe 1,TeralFox,Kiriko,Équipe 2,Mekky,Sombra,0,37,0,0
+[00:05:12] ,offensive_assist,208.31,Équipe 1,Coldi,Mauga,0
+[00:05:12] ,defensive_assist,208.36,Équipe 1,Salter,Ana,0
+[00:05:18] ,kill,214.16,Équipe 1,Coldi,Mauga,Équipe 2,MrSully,Lúcio,0,5.28,0,0
+[00:05:18] ,defensive_assist,214.46,Équipe 1,Salter,Ana,0
+[00:05:18] ,defensive_assist,214.48,Équipe 1,TeralFox,Kiriko,0
+[00:05:18] ,kill,214.48,Équipe 1,TeralFox,Kiriko,Équipe 2,Mikow,Ana,Mêlée,13.92,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 1,GGvador69,Mauga,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 1,GGvador69,Écho,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 1,GGvador69,Genji,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 1,GGvador69,Sojourn,9,6,2,2739.86,381.60,2358.26,0,393.07,0,793.07,0,0,0,1,1,0,0,2,2,0,0,17,0.09,0,0,0,696,182,431,0,0,0.30,218.54
+[00:05:22] ,player_stat,218.54,1,Équipe 2,NafK,Mei,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 2,NafK,Pharah,6,5,2,2107.70,0,2107.70,0,129.62,0,659.62,0,0,0,1,1,0,0,0,4,0,0,0,0,0,0,0,39,23,16,0,0,0.59,134.99
+[00:05:22] ,player_stat,218.54,1,Équipe 2,NafK,Genji,0,0,2,656.66,0,656.66,0,304.60,0,704.60,0,0,0,0,0,0,0,0,0,0,0,4,0.22,0,0,0,76,18,58,0,0,0.24,83.55
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Salter,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Salter,Ana,4,1,2,849.58,228.56,621.02,2602.56,611.12,180,1011.12,0,4,1,1,1,0,0,0,1,0,0,0,0,0.72,0,0,98,10,38,43,31,0.21,218.54
+[00:05:22] ,player_stat,218.54,1,Équipe 2,MrSully,Zenyatta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:05:22] ,player_stat,218.54,1,Équipe 2,MrSully,Ange,0,0,3,238,0,238,1913.36,23.99,16.31,623.99,0,3,5,1,1,0,0,0,0,0,0,4,0.31,0,0,0,30,13,17,0,0,0.43,198.42
+[00:05:22] ,player_stat,218.54,1,Équipe 2,MrSully,Lúcio,1,1,1,157,0,157,68.48,105.44,41.60,305.44,0,0,0,0,0,0,0,1,0,0,0,2,0.29,0,0,0,23,7,16,0,0,0.30,20.12
+[00:05:22] ,player_stat,218.54,1,Équipe 2,Morbcchi,Winston,3,0,2,930.12,0,930.12,0,1822.61,0,2922.61,1950,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,12,5,7,0,0,0.42,85.80
+[00:05:22] ,player_stat,218.54,1,Équipe 2,Morbcchi,D.Va,1,1,2,1433.70,329.34,1104.36,0,1864.20,0,3464.16,2389,0,0,1,1,0,0,0,1,0,0,48,0.12,0,0,0,1581,392,1088,0,0,0.26,132.74
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Coldi,Mauga,10,4,0,4842.66,938.56,3904.10,465.64,3195.09,351.52,4042.23,329.34,2,4,1,1,0,0,0,8,0,0,51,0.07,0,0,0,2357,715,1223,0,0,0.37,218.54
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Nazakoh,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.94
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Nazakoh,Faucheur,0,0,1,244.45,86.28,158.17,0,306.02,29.98,556.02,0,0,0,0,0,0,0,0,0,0,0,3,0.07,0,0,0,160,43,97,0,0,0.31,29.87
+[00:05:22] ,player_stat,218.54,1,Équipe 1,Nazakoh,Cassidy,11,6,1,3313.10,270,3043.10,0,606.03,0,831.03,0,0,0,1,1,0,0,2,7,0,0,5,0.10,0,0,0,114,51,50,0,0,0.50,184.73
+[00:05:22] ,player_stat,218.54,1,Équipe 1,TeralFox,Kiriko,8,3,1,697.76,45,652.72,2873.81,951.95,0,1151.96,0,6,1,1,1,0,0,0,8,0,0,0,0,0,0,0,86,18,57,0,0,0.24,218.54
+[00:05:22] ,player_stat,218.54,1,Équipe 2,Mikow,Ana,0,0,4,1358.14,0,1358.14,2361.17,507.56,28,1307.56,0,2,0,1,1,0,0,0,0,0,0,0,0,0.55,0,0,113,18,69,20,11,0.21,218.54
+[00:05:22] ,round_end,218.54,1,0,1,0,1,100,12.83,0
+[00:05:22] ,player_stat,218.54,1,Équipe 2,Mekky,Sombra,3,0,4,1833.44,0,1833.44,0,85.00,0,885,0,0,2,1,1,0,0,0,2,0,0,11,0.06,0,0,0,544,182,362,0,0,0.33,215.42
+[00:05:22] ,player_stat,218.54,1,Équipe 2,Mekky,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.12
+[00:05:32] ,objective_updated,218.54,2,1,2
+[00:05:33] ,round_start,218.54,2,0,1,0,2
+[00:05:38] ,hero_swap,218.54,Équipe 1,Coldi,Reine des Junkers,Mauga,0
+[00:05:41] ,hero_swap,218.54,Équipe 1,Nazakoh,Symmetra,Cassidy,0
+[00:05:45] ,hero_swap,218.54,Équipe 2,Morbcchi,Reine des Junkers,D.Va,0
+[00:06:01] ,hero_swap,218.54,Équipe 1,GGvador69,Genji,Sojourn,0
+[00:06:13] ,hero_swap,218.54,Équipe 2,NafK,Mei,Genji,0
+[00:06:17] ,hero_swap,218.54,Équipe 2,Morbcchi,Reinhardt,Reine des Junkers,0
+[00:06:19] ,hero_swap,218.54,Équipe 2,Mekky,Bastion,Sombra,0
+[00:06:23] ,hero_swap,218.54,Équipe 2,Mekky,Symmetra,Bastion,0
+[00:06:27] ,hero_swap,218.54,Équipe 2,Mikow,Baptiste,Ana,0
+[00:06:32] ,hero_swap,218.54,Équipe 2,Mikow,Ana,Baptiste,0
+[00:06:53] ,hero_swap,218.54,Équipe 2,Mekky,Bastion,Symmetra,0
+[00:07:33] ,setup_complete,218.54,2,29.99
+[00:07:40] ,hero_swap,224.69,Équipe 1,Nazakoh,Faucheur,Symmetra,6.15
+[00:08:09] ,kill,253.85,Équipe 1,Coldi,Reine des Junkers,Équipe 2,NafK,Mei,Capacité 2,72.69,0,0
+[00:08:09] ,offensive_assist,253.96,Équipe 1,Salter,Ana,0
+[00:08:12] ,point_progress,257.02,2,Toutes les équipes,2,33.30
+[00:08:13] ,point_progress,258.46,2,Toutes les équipes,2,66.80
+[00:08:17] ,point_progress,261.82,2,Toutes les équipes,2,99.96
+[00:08:17] ,objective_captured,261.84,2,Équipe 1,2,0.01,0,0
+[00:08:17] ,kill,261.93,Équipe 1,Coldi,Reine des Junkers,Équipe 2,Mekky,Bastion,Tir secondaire,1.69,0,0
+[00:08:17] ,defensive_assist,262.36,Équipe 1,TeralFox,Kiriko,0
+[00:08:17] ,offensive_assist,262.40,Équipe 1,Salter,Ana,0
+[00:08:17] ,defensive_assist,262.40,Équipe 1,Salter,Ana,0
+[00:08:23] ,kill,268.14,Équipe 1,Salter,Ana,Équipe 2,Mikow,Ana,Capacité 2,25.32,0,0
+[00:08:24] ,kill,268.88,Équipe 1,GGvador69,Genji,Équipe 2,Morbcchi,Reinhardt,Tir secondaire,26.57,0,0
+[00:08:24] ,defensive_assist,268.96,Équipe 1,TeralFox,Kiriko,0
+[00:08:24] ,defensive_assist,268.97,Équipe 1,Salter,Ana,0
+[00:08:26] ,kill,271.48,Équipe 1,Nazakoh,Faucheur,Équipe 2,MrSully,Lúcio,Tir principal,9.54,0,0
+[00:08:27] ,defensive_assist,271.77,Équipe 1,Salter,Ana,0
+[00:08:27] ,defensive_assist,271.79,Équipe 1,TeralFox,Kiriko,0
+[00:08:27] ,hero_swap,271.93,Équipe 2,Mekky,Pharah,Bastion,53.39
+[00:08:33] ,hero_swap,278.59,Équipe 2,Mekky,Sombra,Pharah,6.65
+[00:08:36] ,hero_swap,280.68,Équipe 2,Morbcchi,D.Va,Reinhardt,62.14
+[00:08:36] ,hero_swap,281.35,Équipe 2,NafK,Pharah,Mei,62.81
+[00:08:37] ,hero_swap,282.03,Équipe 2,MrSully,Ange,Lúcio,63.48
+[00:08:41] ,hero_swap,286.28,Équipe 1,Nazakoh,Cassidy,Faucheur,61.59
+[00:08:59] ,kill,303.91,Équipe 2,NafK,Pharah,Équipe 1,Nazakoh,Cassidy,Tir principal,57.70,0,0
+[00:08:59] ,defensive_assist,304.17,Équipe 2,MrSully,Ange,0
+[00:08:59] ,defensive_assist,304.23,Équipe 2,Mikow,Ana,0
+[00:09:08] ,kill,313.48,Équipe 2,Morbcchi,D.Va,Équipe 1,TeralFox,Kiriko,Mêlée,29.52,0,0
+[00:09:08] ,offensive_assist,313.57,Équipe 2,MrSully,Ange,0
+[00:09:08] ,defensive_assist,313.57,Équipe 2,MrSully,Ange,0
+[00:09:08] ,kill,313.59,Équipe 2,Mikow,Ana,Équipe 1,GGvador69,Genji,Tir principal,20.27,0,0
+[00:09:08] ,offensive_assist,313.61,Équipe 2,Mikow,Ana,0
+[00:09:08] ,defensive_assist,313.61,Équipe 2,Mikow,Ana,0
+[00:09:09] ,offensive_assist,314.04,Équipe 2,MrSully,Ange,0
+[00:09:09] ,defensive_assist,314.04,Équipe 2,MrSully,Ange,0
+[00:09:09] ,kill,314.60,Équipe 2,Morbcchi,D.Va,Équipe 1,Salter,Ana,Tir principal,12.62,0,0
+[00:09:11] ,point_progress,316.10,2,Équipe 2,2,33.56
+[00:09:13] ,point_progress,317.78,2,Équipe 2,2,67.26
+[00:09:14] ,objective_captured,319.09,2,Équipe 2,2,47.72,0.01,0
+[00:09:16] ,kill,320.79,Équipe 2,Mekky,Sombra,Équipe 1,Coldi,Reine des Junkers,Tir principal,4.33,0,0
+[00:09:16] ,offensive_assist,321.12,Équipe 2,MrSully,Ange,0
+[00:09:16] ,defensive_assist,321.12,Équipe 2,MrSully,Ange,0
+[00:09:29] ,remech_charged,334.08,Équipe 2,Morbcchi,D.Va,0,1
+[00:09:33] ,dva_remech,337.74,Équipe 2,Morbcchi,D.Va,1
+[00:09:40] ,ultimate_charged,345.55,Équipe 1,Salter,Ana,0,2
+[00:09:43] ,kill,347.98,Équipe 1,Salter,Ana,Équipe 2,Mekky,Sombra,Tir principal,5.29,0,0
+[00:09:44] ,kill,348.64,Équipe 2,NafK,Pharah,Équipe 1,Nazakoh,Cassidy,Tir principal,143.12,0,0
+[00:09:44] ,offensive_assist,348.80,Équipe 2,Mekky,Sombra,0
+[00:09:44] ,offensive_assist,348.83,Équipe 2,MrSully,Ange,0
+[00:09:44] ,defensive_assist,348.83,Équipe 2,MrSully,Ange,0
+[00:09:47] ,ultimate_charged,351.74,Équipe 1,GGvador69,Genji,0,2
+[00:09:50] ,ultimate_charged,354.83,Équipe 2,Mikow,Ana,0,2
+[00:09:51] ,ultimate_charged,356.01,Équipe 2,NafK,Pharah,0,2
+[00:09:52] ,ultimate_charged,356.81,Équipe 1,Coldi,Reine des Junkers,0,2
+[00:09:54] ,ultimate_charged,359.09,Équipe 1,TeralFox,Kiriko,0,2
+[00:09:59] ,ultimate_start,364.53,Équipe 1,GGvador69,Genji,0,2
+[00:10:00] ,ultimate_start,364.81,Équipe 1,Salter,Ana,0,2
+[00:10:00] ,ultimate_start,365.18,Équipe 2,Mikow,Ana,0,2
+[00:10:03] ,ultimate_start,367.92,Équipe 2,NafK,Pharah,0,2
+[00:10:03] ,kill,368.35,Équipe 1,GGvador69,Genji,Équipe 2,Mikow,Ana,Capacité ultime,35,0,0
+[00:10:03] ,offensive_assist,368.51,Équipe 1,Salter,Ana,0
+[00:10:04] ,ultimate_charged,368.76,Équipe 2,Morbcchi,D.Va,0,2
+[00:10:05] ,ultimate_end,370.41,Équipe 2,NafK,Pharah,0,2
+[00:10:05] ,kill,370.54,Équipe 1,GGvador69,Genji,Équipe 2,NafK,Pharah,Capacité ultime,131.16,0,0
+[00:10:06] ,offensive_assist,370.86,Équipe 1,Salter,Ana,0
+[00:10:07] ,ultimate_end,372.52,Équipe 1,GGvador69,Genji,0,2
+[00:10:08] ,ultimate_end,372.94,Équipe 1,Salter,Ana,0,2
+[00:10:08] ,ultimate_end,373.31,Équipe 2,Mikow,Ana,0,2
+[00:10:09] ,kill,373.79,Équipe 2,Mekky,Sombra,Équipe 1,GGvador69,Genji,Mêlée,28.48,0,0
+[00:10:09] ,offensive_assist,374.24,Équipe 2,MrSully,Ange,0
+[00:10:09] ,defensive_assist,374.24,Équipe 2,MrSully,Ange,0
+[00:10:09] ,ultimate_start,374.60,Équipe 2,Morbcchi,D.Va,0,2
+[00:10:11] ,remech_charged,375.85,Équipe 2,Morbcchi,D.Va,0,3
+[00:10:11] ,ultimate_end,376.17,Équipe 2,Morbcchi,D.Va,0,3
+[00:10:13] ,mercy_rez,377.72,Équipe 2,MrSully,Ange,Équipe 2,NafK,Pharah
+[00:10:13] ,dva_remech,378.46,Équipe 2,Morbcchi,D.Va,3
+[00:10:18] ,ultimate_charged,383.08,Équipe 2,MrSully,Ange,0,2
+[00:10:19] ,hero_swap,383.79,Équipe 1,GGvador69,Hanzo,Genji,165.24
+[00:10:26] ,ultimate_start,390.70,Équipe 2,MrSully,Ange,0,2
+[00:10:26] ,kill,391.26,Équipe 1,Nazakoh,Cassidy,Équipe 2,NafK,Pharah,Tir principal,60,0,0
+[00:10:27] ,ultimate_start,392.17,Équipe 1,TeralFox,Kiriko,0,2
+[00:10:27] ,ultimate_end,392.52,Équipe 1,TeralFox,Kiriko,0,2
+[00:10:28] ,ultimate_start,392.62,Équipe 1,TeralFox,Kiriko,0,2
+[00:10:29] ,ultimate_charged,394.57,Équipe 2,Mekky,Sombra,0,2
+[00:10:30] ,kill,395.19,Équipe 1,Nazakoh,Cassidy,Équipe 2,MrSully,Ange,Tir principal,29.04,0,0
+[00:10:30] ,ultimate_end,395.19,Équipe 2,MrSully,Ange,0,2
+[00:10:30] ,offensive_assist,395.32,Équipe 1,TeralFox,Kiriko,0
+[00:10:30] ,defensive_assist,395.32,Équipe 1,TeralFox,Kiriko,0
+[00:10:30] ,defensive_assist,395.34,Équipe 1,Salter,Ana,0
+[00:10:32] ,ultimate_charged,397.26,Équipe 1,Nazakoh,Cassidy,0,2
+[00:10:33] ,kill,398.46,Équipe 1,Coldi,Reine des Junkers,Équipe 2,Morbcchi,D.Va,Tir secondaire,8,0,0
+[00:10:34] ,offensive_assist,398.62,Équipe 1,TeralFox,Kiriko,0
+[00:10:35] ,kill,400.26,Équipe 1,Nazakoh,Cassidy,Équipe 2,Mekky,Sombra,Tir principal,63.50,0,0
+[00:10:35] ,offensive_assist,400.49,Équipe 1,TeralFox,Kiriko,0
+[00:10:35] ,defensive_assist,400.50,Équipe 1,Salter,Ana,0
+[00:10:37] ,point_progress,401.96,2,Équipe 1,2,33.36
+[00:10:38] ,point_progress,403.32,2,Équipe 1,2,67.36
+[00:10:38] ,ultimate_end,403.35,Équipe 1,TeralFox,Kiriko,0,2
+[00:10:40] ,point_progress,404.81,2,Équipe 1,2,99.96
+[00:10:40] ,objective_captured,404.84,2,Équipe 1,2,47.73,71.47,0
+[00:10:43] ,kill,408.18,Équipe 1,Nazakoh,Cassidy,Équipe 2,Mikow,Ana,Capacité 2,55,0,0
+[00:10:43] ,defensive_assist,408.47,Équipe 1,TeralFox,Kiriko,0
+[00:11:10] ,ultimate_start,435.08,Équipe 2,Mekky,Sombra,0,2
+[00:11:14] ,ultimate_start,438.77,Équipe 1,Nazakoh,Cassidy,0,2
+[00:11:15] ,ultimate_end,440.07,Équipe 2,Mekky,Sombra,0,2
+[00:11:16] ,kill,440.76,Équipe 1,Nazakoh,Cassidy,Équipe 2,MrSully,Ange,Capacité ultime,200,0,0
+[00:11:16] ,ultimate_end,441.09,Équipe 1,Nazakoh,Cassidy,0,2
+[00:11:19] ,kill,444.53,Équipe 1,Coldi,Reine des Junkers,Équipe 2,Morbcchi,D.Va,Capacité 2,83.20,0,0
+[00:11:20] ,kill,445.51,Équipe 1,Salter,Ana,Équipe 2,Mekky,Sombra,Tir principal,7.28,0,0
+[00:11:25] ,kill,450.15,Équipe 1,Salter,Ana,Équipe 2,NafK,Pharah,Tir principal,24.16,0,0
+[00:11:29] ,hero_swap,454.53,Équipe 2,Morbcchi,Bouldozer,D.Va,173.85
+[00:11:30] ,kill,455.17,Équipe 1,GGvador69,Hanzo,Équipe 2,Mikow,Ana,Tir principal,16.32,0,0
+[00:11:30] ,defensive_assist,455.51,Équipe 1,Salter,Ana,0
+[00:11:42] ,hero_swap,467.33,Équipe 2,Mikow,Kiriko,Ana,248.79
+[00:11:46] ,kill,471.57,Équipe 2,NafK,Pharah,Équipe 1,Nazakoh,Cassidy,Tir principal,55,0,0
+[00:11:47] ,offensive_assist,471.98,Équipe 2,MrSully,Ange,0
+[00:11:47] ,kill,472.02,Équipe 1,GGvador69,Hanzo,Équipe 2,Mekky,Sombra,Tir principal,15,0,0
+[00:11:47] ,offensive_assist,472.40,Équipe 1,TeralFox,Kiriko,0
+[00:11:47] ,defensive_assist,472.40,Équipe 1,TeralFox,Kiriko,0
+[00:11:49] ,ultimate_charged,473.79,Équipe 1,GGvador69,Hanzo,0,3
+[00:11:49] ,ultimate_charged,474.58,Équipe 1,Salter,Ana,0,3
+[00:11:50] ,ultimate_start,474.66,Équipe 1,GGvador69,Hanzo,0,3
+[00:11:50] ,ultimate_end,475.60,Équipe 1,GGvador69,Hanzo,0,3
+[00:11:52] ,kill,476.82,Équipe 2,NafK,Pharah,Équipe 1,GGvador69,Hanzo,Tir principal,80,0,0
+[00:11:52] ,offensive_assist,477.17,Équipe 2,MrSully,Ange,0
+[00:11:52] ,defensive_assist,477.17,Équipe 2,MrSully,Ange,0
+[00:11:52] ,offensive_assist,477.18,Équipe 2,Mekky,Sombra,0
+[00:11:53] ,ultimate_charged,478.40,Équipe 2,NafK,Pharah,0,3
+[00:11:54] ,ultimate_start,479.21,Équipe 2,NafK,Pharah,0,3
+[00:11:54] ,kill,479.49,Équipe 2,NafK,Pharah,Équipe 1,Salter,Ana,Capacité ultime,6.67,0,0
+[00:11:54] ,offensive_assist,479.52,Équipe 2,MrSully,Ange,0
+[00:11:54] ,defensive_assist,479.52,Équipe 2,MrSully,Ange,0
+[00:11:55] ,kill,480.32,Équipe 1,TeralFox,Kiriko,Équipe 2,NafK,Pharah,0,20.08,0,0
+[00:11:55] ,ultimate_end,480.32,Équipe 2,NafK,Pharah,0,3
+[00:11:56] ,kill,481.21,Équipe 2,Morbcchi,Bouldozer,Équipe 1,TeralFox,Kiriko,Mêlée,6.79,0,0
+[00:11:56] ,offensive_assist,481.36,Équipe 2,Mikow,Kiriko,0
+[00:11:56] ,defensive_assist,481.36,Équipe 2,Mikow,Kiriko,0
+[00:11:56] ,defensive_assist,481.39,Équipe 2,MrSully,Ange,0
+[00:11:57] ,ultimate_start,482.32,Équipe 1,Coldi,Reine des Junkers,0,2
+[00:11:58] ,point_progress,482.89,2,Équipe 2,2,33.75
+[00:12:03] ,ultimate_end,487.90,Équipe 1,Coldi,Reine des Junkers,0,2
+[00:12:04] ,kill,488.77,Équipe 2,Mikow,Kiriko,Équipe 1,Coldi,Reine des Junkers,0,37.76,0,0
+[00:12:04] ,defensive_assist,488.86,Équipe 2,Mikow,Kiriko,0
+[00:12:04] ,offensive_assist,488.89,Équipe 2,MrSully,Ange,0
+[00:12:04] ,defensive_assist,488.89,Équipe 2,MrSully,Ange,0
+[00:12:06] ,point_progress,490.64,2,Équipe 2,2,67.31
+[00:12:07] ,objective_captured,491.95,2,Équipe 2,2,99.99,71.48,0
+[00:12:07] ,mercy_rez,492.48,Équipe 2,MrSully,Ange,Équipe 2,NafK,Pharah
+[00:12:17] ,hero_swap,501.76,Équipe 1,Coldi,D.Va,Reine des Junkers,283.21
+[00:12:22] ,kill,507.37,Équipe 1,Nazakoh,Cassidy,Équipe 2,NafK,Pharah,Tir principal,70,0,0
+[00:12:23] ,defensive_assist,507.64,Équipe 1,TeralFox,Kiriko,0
+[00:12:23] ,defensive_assist,507.66,Équipe 1,Salter,Ana,0
+[00:12:31] ,ultimate_charged,516.03,Équipe 2,Morbcchi,Bouldozer,0,4
+[00:12:31] ,ultimate_charged,516.33,Équipe 1,TeralFox,Kiriko,0,3
+[00:12:31] ,kill,516.36,Équipe 1,Nazakoh,Cassidy,Équipe 2,Mikow,Kiriko,Tir principal,41.60,0,0
+[00:12:31] ,defensive_assist,516.55,Équipe 1,TeralFox,Kiriko,0
+[00:12:32] ,ultimate_start,516.71,Équipe 2,Morbcchi,Bouldozer,0,4
+[00:12:32] ,ultimate_start,516.76,Équipe 1,Salter,Ana,0,3
+[00:12:32] ,ultimate_end,517.11,Équipe 2,Morbcchi,Bouldozer,0,4
+[00:12:32] ,ultimate_start,517.26,Équipe 1,TeralFox,Kiriko,0,3
+[00:12:33] ,ultimate_end,517.61,Équipe 1,TeralFox,Kiriko,0,3
+[00:12:33] ,ultimate_start,517.71,Équipe 1,TeralFox,Kiriko,0,3
+[00:12:35] ,kill,520.01,Équipe 1,Coldi,D.Va,Équipe 2,MrSully,Ange,0,19.51,0,0
+[00:12:35] ,kill,520.06,Équipe 2,Mekky,Sombra,Équipe 1,Nazakoh,Cassidy,Capacité 1,0.20,0,0
+[00:12:35] ,defensive_assist,520.33,Équipe 1,TeralFox,Kiriko,0
+[00:12:35] ,offensive_assist,520.34,Équipe 1,Salter,Ana,0
+[00:12:35] ,defensive_assist,520.39,Équipe 2,MrSully,Ange,0
+[00:12:37] ,kill,522.55,Équipe 1,Coldi,D.Va,Équipe 2,Morbcchi,Bouldozer,0,22.36,0,0
+[00:12:38] ,defensive_assist,522.66,Équipe 1,TeralFox,Kiriko,0
+[00:12:38] ,offensive_assist,522.68,Équipe 1,Salter,Ana,0
+[00:12:38] ,defensive_assist,522.68,Équipe 1,Salter,Ana,0
+[00:12:38] ,point_progress,522.77,2,Équipe 1,2,33.37
+[00:12:39] ,point_progress,524.21,2,Équipe 1,2,66.97
+[00:12:39] ,kill,524.53,Équipe 1,GGvador69,Hanzo,Équipe 2,Mekky,Sombra,Tir principal,53,Vrai,0
+[00:12:39] ,offensive_assist,524.55,Équipe 1,TeralFox,Kiriko,0
+[00:12:39] ,offensive_assist,524.57,Équipe 1,Salter,Ana,0
+[00:12:39] ,defensive_assist,524.57,Équipe 1,Salter,Ana,0
+[00:12:40] ,ultimate_end,524.89,Équipe 1,Salter,Ana,0,3
+[00:12:40] ,objective_captured,525.56,2,Équipe 1,2,99.99,99.99,0
+[00:12:43] ,ultimate_end,528.18,Équipe 1,TeralFox,Kiriko,0,3
+[00:12:45] ,kill,530.29,Équipe 1,Coldi,D.Va,Équipe 2,NafK,Pharah,Capacité 2,6,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 1,GGvador69,Mauga,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 1,GGvador69,Écho,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 1,GGvador69,Genji,7,3,2,2617.40,491,2126.40,0,624.82,0,1074.82,0,0,0,1,1,0,0,0,4,0,0,4,0.08,0,0,0,181,53,111,0,0,0.32,165.24
+[00:12:45] ,player_stat,530.56,2,Équipe 1,GGvador69,Sojourn,9,6,2,2739.86,381.60,2358.26,0,393.07,0,793.07,0,0,0,1,1,0,0,2,2,0,0,17,0.09,0,0,0,696,182,431,0,0,0.30,218.54
+[00:12:45] ,player_stat,530.56,2,Équipe 1,GGvador69,Hanzo,6,3,1,2340.66,0,2240.64,0,1134.06,0,1384.06,0,0,0,1,1,0,0,0,3,0,0,5,0.17,0,0,0,85,29,49,0,0,0.37,146.78
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Salter,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Salter,Ana,13,5,4,2421.56,358.56,2063.00,6282.49,1691.15,368,2565.15,0,13,8,3,3,0,0,1,6,0,0,0,0,0.60,0,0,249,30,111,102,61,0.21,530.56
+[00:12:45] ,player_stat,530.56,2,Équipe 2,MrSully,Zenyatta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 2,MrSully,Ange,0,0,6,478,0,478,4573.30,583.42,345.67,1783.42,0,14,14,2,2,0,0,0,0,0,0,6,0.26,0,0,0,60,23,37,0,0,0.38,446.96
+[00:12:45] ,player_stat,530.56,2,Équipe 2,MrSully,Lúcio,1,1,2,562,0,562,800.90,236.57,163.44,636.57,0,0,0,0,0,0,0,1,0,0,0,3,0.15,0,0,0,99,20,79,0,0,0.20,83.60
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Coldi,Mauga,10,4,0,4842.66,938.56,3904.10,465.64,3195.09,351.52,4042.23,329.34,2,4,1,1,0,0,0,8,0,0,51,0.07,0,0,0,2357,715,1223,0,0,0.37,218.54
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Coldi,Reine des Junkers,9,4,2,4974.42,545.66,4378.34,0,2661.84,718.63,4207.84,0,0,0,1,1,0,0,0,6,0,0,28,0.06,0,0,0,1070,477,440,0,0,0.52,283.21
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Coldi,D.Va,5,3,0,675.60,0,675.60,0,178.38,0,267.02,48,0,0,0,0,0,0,0,2,0,0,7,0.03,0,0,0,979,219,760,0,0,0.22,28.81
+[00:12:45] ,player_stat,530.56,2,Équipe 1,TeralFox,Kiriko,15,4,3,2421.79,322.80,2035.93,6957.71,2934.51,0,3611.68,0,17,6,3,3,0,0,0,13,0,0,1,0.02,0,0,0,220,52,146,0,0,0.26,530.56
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mikow,Ana,2,1,8,2087.38,0,2087.38,4867.06,1004.20,88,2604.20,0,4,1,2,2,0,0,0,1,0,0,0,0,0.53,0,0,239,26,142,32,17,0.15,467.33
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mikow,Baptiste,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mikow,Kiriko,1,1,1,528.26,0,528.26,605.18,27.60,0,227.60,0,2,1,0,0,0,0,0,1,0,0,2,0.22,0,0,0,26,9,17,0,0,0.35,63.23
+[00:12:45] ,round_end,530.56,2,0,2,0,2,100,99.99,0
+[00:12:45] ,player_stat,530.56,2,Équipe 2,NafK,Mei,0,0,1,605,0,605,0,17.15,0,267.15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,16,12,0,0,0.57,62.81
+[00:12:45] ,player_stat,530.56,2,Équipe 2,NafK,Pharah,17,10,8,5970.31,0,5970.31,0,1208.85,0,2966.74,0,0,0,3,3,1,3,0,10,0,0,0,0,0,0,0,130,70,58,0,0,0.55,384.20
+[00:12:45] ,player_stat,530.56,2,Équipe 2,NafK,Genji,0,0,2,656.66,0,656.66,0,304.60,0,704.60,0,0,0,0,0,0,0,0,0,0,0,4,0.22,0,0,0,76,18,58,0,0,0.24,83.55
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mekky,Sombra,10,3,9,3770.55,0,3770.55,0,792.90,0,2592.90,0,0,4,2,2,0,0,0,5,0,0,28,0.09,0,0,0,1103,299,797,0,0,0.27,467.40
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mekky,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.12
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mekky,Bastion,0,0,1,578.83,0,578.83,0,285.35,0,585.35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,32,150,0,0,0.18,53.39
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Mekky,Pharah,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.65
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Morbcchi,Winston,3,0,2,930.12,0,930.12,0,1822.61,0,2922.61,1950,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,12,5,7,0,0,0.42,85.80
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Morbcchi,D.Va,7,3,4,3754.04,329.34,3424.69,0,3516.90,0,7904.98,5086.27,0,0,3,5,1,3,0,2,0,0,93,0.10,0,0,0,4151,908,3003,0,0,0.23,306.59
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Morbcchi,Reine des Junkers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Morbcchi,Reinhardt,0,0,1,340,0,340,0,863.41,0,1463.41,1992.14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62.14
+[00:12:45] ,player_stat,530.56,2,Équipe 2,Morbcchi,Bouldozer,3,1,1,1350.24,0,1350.24,0,1375.38,0,2618.38,0,0,0,1,1,0,0,0,3,0,0,8,0.08,0,0,0,304,96,208,0,0,0.32,76.03
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Nazakoh,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10.08
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Nazakoh,Faucheur,5,1,1,1656.71,633.96,1022.76,0,414.02,137.98,664.02,0,0,0,0,0,0,0,0,4,0,0,14,0.06,0,0,0,900,238,518,0,0,0.31,91.46
+[00:12:45] ,player_stat,530.56,2,Équipe 1,Nazakoh,Cassidy,22,13,5,6566.79,270,6296.79,0,1501.79,0,2676.79,0,0,0,2,2,0,0,3,14,0,0,5,0.05,0,0,0,239,100,115,0,0,0.47,429.02
+[00:12:46] ,hero_swap,530.56,Équipe 1,Nazakoh,Tracer,Cassidy,0
+[00:12:55] ,objective_updated,530.56,3,2,0
+[00:12:56] ,round_start,530.56,3,0,2,0,0
+[00:13:03] ,hero_swap,530.56,Équipe 1,GGvador69,Fatale,Hanzo,0
+[00:13:05] ,hero_swap,530.56,Équipe 1,Coldi,Reine des Junkers,D.Va,0
+[00:13:07] ,hero_swap,530.56,Équipe 1,Nazakoh,Symmetra,Tracer,0
+[00:13:15] ,hero_swap,530.56,Équipe 1,GGvador69,Écho,Fatale,0
+[00:13:15] ,hero_swap,530.56,Équipe 1,Coldi,D.Va,Reine des Junkers,0
+[00:13:17] ,hero_swap,530.56,Équipe 2,Mikow,Ana,Kiriko,0
+[00:13:24] ,hero_swap,530.56,Équipe 2,Morbcchi,Winston,Bouldozer,0
+[00:13:40] ,hero_swap,530.56,Équipe 2,Mekky,Soldat : 76,Sombra,0
+[00:13:56] ,hero_swap,530.56,Équipe 2,Mekky,Symmetra,Soldat : 76,0
+[00:14:34] ,setup_complete,530.56,3,29.99
+[00:14:34] ,defensive_assist,530.58,Équipe 1,TeralFox,Kiriko,0
+[00:14:38] ,hero_swap,534.08,Équipe 2,Mekky,Soldat : 76,Symmetra,3.52
+[00:14:40] ,hero_swap,536.10,Équipe 1,Nazakoh,Sojourn,Symmetra,5.53
+[00:14:59] ,kill,554.79,Équipe 1,Coldi,D.Va,Équipe 2,Mekky,Soldat : 76,0,11.00,0,0
+[00:14:59] ,kill,554.92,Équipe 2,NafK,Pharah,Équipe 1,GGvador69,Écho,Tir principal,48,0,0
+[00:14:59] ,defensive_assist,555.08,Équipe 1,TeralFox,Kiriko,0
+[00:14:59] ,defensive_assist,555.14,Équipe 2,MrSully,Ange,0
+[00:15:02] ,mercy_rez,558.28,Équipe 2,MrSully,Ange,Équipe 2,Mekky,Soldat : 76
+[00:15:03] ,kill,558.79,Équipe 1,Salter,Ana,Équipe 2,Morbcchi,Winston,Tir principal,23.28,0,0
+[00:15:03] ,offensive_assist,558.85,Équipe 1,TeralFox,Kiriko,0
+[00:15:03] ,defensive_assist,558.85,Équipe 1,TeralFox,Kiriko,0
+[00:15:03] ,defensive_assist,558.87,Équipe 1,Salter,Ana,0
+[00:15:03] ,kill,558.99,Équipe 1,Nazakoh,Sojourn,Équipe 2,NafK,Pharah,Tir principal,13.84,Vrai,0
+[00:15:06] ,point_progress,562.34,3,Toutes les équipes,0,33.58
+[00:15:08] ,point_progress,564.11,3,Toutes les équipes,0,66.88
+[00:15:10] ,kill,566.70,Équipe 2,MrSully,Ange,Équipe 1,Nazakoh,Sojourn,Tir principal,33.04,Vrai,0
+[00:15:17] ,kill,573.05,Équipe 1,Coldi,D.Va,Équipe 2,Mikow,Ana,0,11.50,0,0
+[00:15:17] ,defensive_assist,573.40,Équipe 1,TeralFox,Kiriko,0
+[00:15:17] ,defensive_assist,573.42,Équipe 1,Salter,Ana,0
+[00:15:20] ,hero_swap,575.82,Équipe 2,Morbcchi,D.Va,Winston,45.26
+[00:15:28] ,point_progress,584.55,3,Équipe 2,0,0
+[00:15:28] ,objective_captured,584.55,3,Équipe 1,0,0,0,0
+[00:15:57] ,kill,613.49,Équipe 2,NafK,Pharah,Équipe 1,Salter,Ana,Tir principal,1.51,0,0
+[00:15:58] ,defensive_assist,613.83,Équipe 2,Mikow,Ana,0
+[00:15:58] ,defensive_assist,613.86,Équipe 2,MrSully,Ange,0
+[00:16:01] ,kill,617.67,Équipe 1,Nazakoh,Sojourn,Équipe 2,Mikow,Ana,Tir secondaire,92,0,0
+[00:16:03] ,kill,619.30,Équipe 2,Morbcchi,D.Va,Équipe 1,TeralFox,Kiriko,0,1.36,0,0
+[00:16:03] ,defensive_assist,619.54,Équipe 2,Mekky,Soldat : 76,0
+[00:16:05] ,kill,621.31,Équipe 1,Coldi,D.Va,Équipe 2,MrSully,Ange,0,2.90,0,0
+[00:16:05] ,defensive_assist,621.33,Équipe 1,TeralFox,Kiriko,0
+[00:16:13] ,kill,629.48,Équipe 2,Mekky,Soldat : 76,Équipe 1,Coldi,D.Va,Tir principal,18,0,0
+[00:16:14] ,remech_charged,629.74,Équipe 1,Coldi,D.Va,0,3
+[00:16:14] ,kill,629.82,Équipe 1,Nazakoh,Sojourn,Équipe 2,NafK,Pharah,Tir principal,5.22,0,0
+[00:16:14] ,defensive_assist,629.88,Équipe 2,Mekky,Soldat : 76,0
+[00:16:14] ,point_progress,630.52,3,Équipe 2,0,33.77
+[00:16:16] ,point_progress,632.28,3,Équipe 2,0,66.77
+[00:16:20] ,kill,636.62,Équipe 1,GGvador69,Écho,Équipe 2,Mekky,Soldat : 76,Capacité 2,10.40,0,0
+[00:16:21] ,kill,637.08,Équipe 2,Morbcchi,D.Va,Équipe 1,GGvador69,Écho,0,9.04,0,0
+[00:16:23] ,point_progress,639.17,3,Équipe 1,0,0
+[00:16:23] ,objective_captured,639.17,3,Équipe 2,0,45.55,0,0
+[00:16:23] ,ultimate_charged,639.61,Équipe 1,Coldi,D.Va,0,4
+[00:16:31] ,point_progress,646.95,3,Équipe 1,0,33.58
+[00:16:33] ,ultimate_charged,649.01,Équipe 2,Mekky,Soldat : 76,0,3
+[00:16:36] ,ultimate_charged,652.51,Équipe 1,GGvador69,Écho,0,4
+[00:16:41] ,ultimate_charged,657.56,Équipe 2,NafK,Pharah,0,4
+[00:16:47] ,ultimate_start,663.13,Équipe 2,Mekky,Soldat : 76,0,3
+[00:16:48] ,ultimate_charged,664.27,Équipe 1,Salter,Ana,0,4
+[00:16:49] ,kill,665.21,Équipe 2,Mekky,Soldat : 76,Équipe 1,Nazakoh,Sojourn,Capacité ultime,6.74,0,0
+[00:16:49] ,defensive_assist,665.53,Équipe 2,MrSully,Ange,0
+[00:16:51] ,echo_duplicate_start,667.69,Équipe 1,GGvador69,Écho,Soldat : 76,4
+[00:16:52] ,ultimate_charged,668.36,Équipe 2,Morbcchi,D.Va,0,5
+[00:16:52] ,kill,668.53,Équipe 1,TeralFox,Kiriko,Équipe 2,Mekky,Soldat : 76,0,60.32,Vrai,0
+[00:16:52] ,ultimate_end,668.53,Équipe 2,Mekky,Soldat : 76,0,3
+[00:16:53] ,defensive_assist,668.77,Équipe 1,TeralFox,Kiriko,0
+[00:16:53] ,kill,669.21,Équipe 2,NafK,Pharah,Équipe 1,Salter,Ana,Tir principal,73.28,0,0
+[00:16:54] ,ultimate_charged,670.23,Équipe 2,Mikow,Ana,0,3
+[00:16:56] ,ultimate_charged,672.04,Équipe 1,TeralFox,Kiriko,0,4
+[00:16:58] ,ultimate_charged,674.04,Équipe 2,MrSully,Ange,0,3
+[00:16:59] ,ultimate_start,675.00,Équipe 1,TeralFox,Kiriko,0,4
+[00:16:59] ,ultimate_end,675.35,Équipe 1,TeralFox,Kiriko,0,4
+[00:16:59] ,ultimate_start,675.44,Équipe 1,TeralFox,Kiriko,0,4
+[00:16:59] ,echo_duplicate_end,675.46,Équipe 1,GGvador69,Écho,4
+[00:17:02] ,ultimate_start,678.67,Équipe 2,Mikow,Ana,0,3
+[00:17:05] ,ultimate_start,681.41,Équipe 1,Coldi,D.Va,0,4
+[00:17:06] ,kill,682.38,Équipe 1,GGvador69,Écho,Équipe 2,MrSully,Ange,Capacité 2,15.60,0,0
+[00:17:06] ,kill,682.66,Équipe 1,Coldi,D.Va,Équipe 2,NafK,Pharah,Capacité ultime,200,0,0
+[00:17:06] ,remech_charged,682.66,Équipe 1,Coldi,D.Va,0,5
+[00:17:07] ,offensive_assist,682.86,Équipe 1,TeralFox,Kiriko,0
+[00:17:07] ,defensive_assist,682.86,Équipe 1,TeralFox,Kiriko,0
+[00:17:07] ,ultimate_end,682.97,Équipe 1,Coldi,D.Va,0,5
+[00:17:09] ,dva_remech,684.78,Équipe 1,Coldi,D.Va,5
+[00:17:10] ,ultimate_end,686.16,Équipe 1,TeralFox,Kiriko,0,4
+[00:17:10] ,ultimate_start,686.48,Équipe 2,Morbcchi,D.Va,0,5
+[00:17:11] ,ultimate_end,686.80,Équipe 2,Mikow,Ana,0,3
+[00:17:11] ,kill,686.92,Équipe 1,GGvador69,Écho,Équipe 2,Mikow,Ana,Tir secondaire,19.80,0,0
+[00:17:11] ,offensive_assist,687.07,Équipe 1,TeralFox,Kiriko,0
+[00:17:11] ,defensive_assist,687.07,Équipe 1,TeralFox,Kiriko,0
+[00:17:12] ,kill,687.72,Équipe 2,Morbcchi,D.Va,Équipe 1,GGvador69,Écho,Capacité ultime,101.53,0,0
+[00:17:12] ,offensive_assist,688.06,Équipe 2,Mikow,Ana,0
+[00:17:12] ,kill,688.67,Équipe 1,Coldi,D.Va,Équipe 2,Morbcchi,D.Va,0,3.06,Vrai,0
+[00:17:12] ,ultimate_end,688.67,Équipe 2,Morbcchi,D.Va,0,5
+[00:17:15] ,point_progress,691.40,3,Équipe 1,0,66.98
+[00:17:17] ,ultimate_charged,693.00,Équipe 1,Nazakoh,Sojourn,0,3
+[00:17:21] ,kill,696.71,Équipe 1,Nazakoh,Sojourn,Équipe 2,Mekky,Soldat : 76,Tir secondaire,38.91,0,0
+[00:17:21] ,defensive_assist,696.95,Équipe 1,TeralFox,Kiriko,0
+[00:17:23] ,objective_captured,698.79,3,Équipe 1,0,45.56,49.69,0
+[00:17:28] ,hero_swap,704.00,Équipe 1,GGvador69,Fatale,Écho,173.44
+[00:17:50] ,ultimate_start,726.33,Équipe 2,MrSully,Ange,0,3
+[00:17:50] ,ultimate_start,726.44,Équipe 1,Nazakoh,Sojourn,0,3
+[00:17:52] ,kill,727.93,Équipe 1,GGvador69,Fatale,Équipe 2,NafK,Pharah,Tir principal,77.68,0,0
+[00:17:52] ,defensive_assist,728.41,Équipe 1,TeralFox,Kiriko,0
+[00:17:54] ,kill,730.44,Équipe 1,Nazakoh,Sojourn,Équipe 2,MrSully,Ange,Capacité ultime,71.25,0,0
+[00:17:54] ,ultimate_end,730.44,Équipe 2,MrSully,Ange,0,3
+[00:17:59] ,ultimate_end,735.17,Équipe 1,Nazakoh,Sojourn,0,3
+[00:18:06] ,kill,742.40,Équipe 1,Coldi,D.Va,Équipe 2,Mikow,Ana,0,27.16,Vrai,0
+[00:18:25] ,ultimate_start,760.84,Équipe 1,Salter,Ana,0,4
+[00:18:25] ,ultimate_start,761.25,Équipe 2,NafK,Pharah,0,4
+[00:18:26] ,kill,761.68,Équipe 2,NafK,Pharah,Équipe 1,GGvador69,Fatale,Capacité ultime,33.32,0,0
+[00:18:26] ,defensive_assist,761.83,Équipe 2,MrSully,Ange,0
+[00:18:28] ,ultimate_end,763.75,Équipe 2,NafK,Pharah,0,4
+[00:18:28] ,kill,764.50,Équipe 1,Coldi,D.Va,Équipe 2,NafK,Pharah,0,11.46,0,0
+[00:18:28] ,defensive_assist,764.56,Équipe 1,TeralFox,Kiriko,0
+[00:18:28] ,offensive_assist,764.58,Équipe 1,Salter,Ana,0
+[00:18:30] ,ultimate_charged,766.13,Équipe 1,Coldi,D.Va,0,6
+[00:18:32] ,kill,768.56,Équipe 1,Salter,Ana,Équipe 2,MrSully,Ange,Tir principal,18.57,0,0
+[00:18:33] ,defensive_assist,768.80,Équipe 1,TeralFox,Kiriko,0
+[00:18:33] ,ultimate_end,768.96,Équipe 1,Salter,Ana,0,4
+[00:18:36] ,kill,772.57,Équipe 1,Coldi,D.Va,Équipe 2,Mekky,Soldat : 76,0,6.59,0,0
+[00:18:37] ,defensive_assist,773.02,Équipe 1,TeralFox,Kiriko,0
+[00:18:37] ,offensive_assist,773.04,Équipe 1,Salter,Ana,0
+[00:18:37] ,defensive_assist,773.04,Équipe 1,Salter,Ana,0
+[00:18:39] ,kill,775.04,Équipe 1,TeralFox,Kiriko,Équipe 2,Mikow,Ana,0,35,0,0
+[00:18:40] ,remech_charged,775.71,Équipe 2,Morbcchi,D.Va,0,6
+[00:18:41] ,kill,777.40,Équipe 1,TeralFox,Kiriko,Équipe 2,Morbcchi,D.Va,0,8,0,0
+[00:18:41] ,hero_swap,777.48,Équipe 2,NafK,Symmetra,Pharah,246.92
+[00:18:42] ,defensive_assist,777.74,Équipe 1,Salter,Ana,0
+[00:18:43] ,ultimate_start,778.70,Équipe 2,Morbcchi,D.Va,0,6
+[00:18:43] ,ultimate_end,778.70,Équipe 2,Morbcchi,D.Va,0,6
+[00:18:45] ,kill,781.06,Équipe 1,GGvador69,Fatale,Équipe 1,GGvador69,Fatale,0,175,0,Vrai
+[00:18:46] ,player_stat,782.41,3,Équipe 2,NafK,Mei,0,0,1,605,0,605,0,17.15,0,267.15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,16,12,0,0,0.57,62.81
+[00:18:46] ,player_stat,782.41,3,Équipe 2,NafK,Pharah,22,14,13,8836.59,0,8836.57,0,1964.45,0,4761.94,0,0,0,4,4,1,3,0,11,0,0,0,0,0,0,0,210,107,92,0,0,0.54,631.12
+[00:18:46] ,player_stat,782.41,3,Équipe 2,NafK,Genji,0,0,2,656.66,0,656.66,0,304.60,0,704.60,0,0,0,0,0,0,0,0,0,0,0,4,0.22,0,0,0,76,18,58,0,0,0.24,83.55
+[00:18:46] ,player_stat,782.41,3,Équipe 2,NafK,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.93
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mekky,Sombra,10,3,9,3770.55,0,3770.55,0,792.90,0,2592.90,0,0,4,2,2,0,0,0,5,0,0,28,0.09,0,0,0,1103,299,797,0,0,0.27,467.40
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mekky,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.64
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mekky,Bastion,0,0,1,578.83,0,578.83,0,285.35,0,585.35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202,32,150,0,0,0.18,53.39
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mekky,Pharah,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.65
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mekky,Soldat : 76,5,2,5,2991.77,0,2991.77,991.31,881.67,562.51,1908.20,0,2,0,1,1,0,0,0,3,0,0,3,0.02,0,0,0,441,146,223,0,0,0.40,248.33
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Coldi,Mauga,10,4,0,4842.66,938.56,3904.10,465.64,3195.09,351.52,4042.23,329.34,2,4,1,1,0,0,0,8,0,0,51,0.07,0,0,0,2357,715,1223,0,0,0.37,218.54
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Coldi,Reine des Junkers,9,4,2,4974.42,545.66,4378.34,0,2661.84,718.63,4207.84,0,0,0,1,1,0,0,0,6,0,0,28,0.06,0,0,0,1070,477,440,0,0,0.52,283.21
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Coldi,D.Va,20,11,1,5157.16,260,4892.96,0,3465.12,0,5151.92,7962.31,0,0,2,3,0,0,2,7,0,0,131,0.07,0,0,0,7727,1913,5015,0,0,0.28,280.65
+[00:18:46] ,round_end,782.41,3,0,3,0,0,100,49.69,0
+[00:18:46] ,match_end,782.41,3,3,0
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Mauga,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Écho,7,3,3,2198.80,228,1970.80,0,514.49,0,1378.47,0,0,0,1,2,0,0,0,3,0,0,4,0.05,0,0,0,350,73,209,0,0,0.26,173.44
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Genji,7,3,2,2617.40,491,2126.40,0,624.82,0,1074.82,0,0,0,1,1,0,0,0,4,0,0,4,0.08,0,0,0,181,53,111,0,0,0.32,165.24
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Sojourn,9,6,2,2739.86,381.60,2358.26,0,393.07,0,793.07,0,0,0,1,1,0,0,2,2,0,0,17,0.09,0,0,0,696,182,431,0,0,0.30,218.54
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Hanzo,6,3,1,2340.66,0,2240.64,0,1134.06,0,1384.06,0,0,0,1,1,0,0,0,3,0,0,5,0.17,0,0,0,85,29,49,0,0,0.37,146.78
+[00:18:46] ,player_stat,782.41,3,Équipe 1,GGvador69,Fatale,1,1,2,452.35,0,452.35,0,138.16,0,488.16,0,0,0,0,0,0,0,0,1,0,1,1,0.14,0.42,0,0,19,7,12,12,5,0.37,78.40
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Salter,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Salter,Ana,17,7,6,2992.17,358.56,2633.61,8694.41,2318.11,567,3592.11,0,17,10,4,4,0,0,1,6,0,0,0,0,0.59,0,0,327,38,144,152,90,0.21,782.41
+[00:18:46] ,player_stat,782.41,3,Équipe 2,MrSully,Zenyatta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 2,MrSully,Ange,1,1,10,629.60,0,629.60,6236.39,935.13,513.84,2935.13,0,18,14,3,3,0,0,1,0,0,0,7,0.23,0,0,0,71,30,41,0,0,0.42,698.80
+[00:18:46] ,player_stat,782.41,3,Équipe 2,MrSully,Lúcio,1,1,2,562,0,562,800.90,236.57,163.44,636.57,0,0,0,0,0,0,0,1,0,0,0,3,0.15,0,0,0,99,20,79,0,0,0.20,83.60
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Morbcchi,Winston,3,0,3,1247.71,0,1247.71,0,2476.22,0,4126.22,2600,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,13,5,8,0,0,0.38,131.06
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Morbcchi,D.Va,13,6,6,6034.28,329.34,5704.94,0,5981.32,0,11759.11,9442.27,0,0,4,7,1,3,0,6,0,0,193,0.10,0,0,0,7853,1863,4743,0,0,0.28,513.18
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Morbcchi,Reine des Junkers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Morbcchi,Reinhardt,0,0,1,340,0,340,0,863.41,0,1463.41,1992.14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62.14
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Morbcchi,Bouldozer,3,1,1,1350.24,0,1350.24,0,1375.38,0,2618.38,0,0,0,1,1,0,0,0,3,0,0,8,0.08,0,0,0,304,96,208,0,0,0.32,76.03
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Nazakoh,Symmetra,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15.62
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Nazakoh,Faucheur,5,1,1,1656.71,633.96,1022.76,0,414.02,137.98,664.02,0,0,0,0,0,0,0,0,4,0,0,14,0.06,0,0,0,900,238,518,0,0,0.31,91.46
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Nazakoh,Cassidy,22,13,5,6566.79,270,6296.79,0,1501.79,0,2676.79,0,0,0,2,2,0,0,3,14,0,0,5,0.05,0,0,0,239,100,115,0,0,0.47,429.02
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Nazakoh,Tracer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 1,Nazakoh,Sojourn,12,5,2,2862.61,117,2745.59,0,215.90,0,629.90,0,0,0,1,1,0,0,3,4,0,0,12,0.06,0,0,0,738,193,485,0,0,0.28,246.31
+[00:18:46] ,player_stat,782.41,3,Équipe 1,TeralFox,Kiriko,21,7,4,3549.61,367.80,3118.75,10325.27,4354.91,0,5232.08,0,29,9,4,4,0,0,1,15,0,0,2,0.02,0,0,0,318,83,197,0,0,0.30,782.41
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mikow,Ana,4,1,13,3287.81,0,3287.81,7183.98,1299.92,148,3899.93,0,5,2,3,3,0,0,0,2,0,0,0,0,0.51,0,0,374,44,210,41,21,0.17,719.17
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mikow,Baptiste,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[00:18:46] ,player_stat,782.41,3,Équipe 2,Mikow,Kiriko,1,1,1,528.26,0,528.26,605.18,27.60,0,227.60,0,2,1,0,0,0,0,0,1,0,0,2,0.22,0,0,0,26,9,17,0,0,0.35,63.23
+[00:18:47] ,ultimate_start,782.41,Équipe 1,Coldi,D.Va,0,6
+[00:18:48] ,ultimate_end,782.41,Équipe 1,Coldi,D.Va,0,6
