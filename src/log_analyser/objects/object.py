@@ -18,6 +18,11 @@ class Object:
                 print("key {} not find in dataschema".format(key))
                 self.from_json_ok = False
 
+        for key, value in class_model.items():
+            if not hasattr(self, key):
+                print("key {} not find in object".format(key, value()))
+                setattr(self, key, value())
+
     def export_json_recursive(self, data):
         if issubclass(type(data), Object):
             dict_class = data.__dict__.copy()
@@ -39,7 +44,7 @@ class Object:
         for key, value in dict_class.items():
             dict_class[key] = self.export_json_recursive(value)
 
-        return json.dumps(dict_class)
+        return json.dumps(dict_class, indent=4, sort_keys=True, default=str)
 
     def convert_timefile_to_datetime(self, time_string):
 

@@ -2,21 +2,20 @@ from objects.object import Object
 
 
 class Character(Object):
-    
     def __init__(self, **kwargs):
         
-        data_schema = {"name": str}
+        data_schema = {"name": str,
+                       "stats": dict,
+                       "played_time": list,
+                       "kills": list,
+                       "deads": list,
+                       "offensive_assists": list,
+                       "defensive_assists": list,
+                       "ultimate_charged": list,
+                       "ultimate_use": list}
         
         super().__init__(data_schema, **kwargs)
 
-        self.played_time = []
-        self.stats = {}
-        self.kills = []
-        self.deads = []
-        self.offensive_assists = []
-        self.defensive_assists = []
-        self.ultimate_charged = []
-        self.ultimate_use = []
 
     def add_played_time(self, data):
         self.played_time.append(data)
@@ -35,9 +34,15 @@ class Character(Object):
 
     def add_ultimate_charged(self, data):
         self.ultimate_charged.append(data)
+
     def add_ultimate_start(self, data):
         self.ultimate_use.append(data)
-    def add_ultimate_stop(self, data):
-        self.ultimate_end[-1]["end"] = data["date"]
+
+    def add_ultimate_end(self, data):
+
+        if len(self.ultimate_use) == 0:
+            return -1
+        self.ultimate_use[-1]["end"] = data["end"]
+
     def add_character_stats(self, data):
         self.stats = data
