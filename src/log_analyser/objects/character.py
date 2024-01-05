@@ -8,7 +8,7 @@ class Character(Object):
                        "stats": dict,
                        "played_time": list,
                        "kills": list,
-                       "deads": list,
+                       "deaths": list,
                        "ultimate_charged": list,
                        "ultimate_use": list}
         
