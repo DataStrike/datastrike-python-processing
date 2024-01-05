@@ -8,8 +8,7 @@ class DatastrikePythonProcessing:
     def __init__(self):
 
         self.running = True
-        
-        
+
         self.producer_thread = ProducerThread("localhost:29093")
         
         self.consumer_thread = ConsumerThread("localhost:29093")

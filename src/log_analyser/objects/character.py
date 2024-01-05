@@ -9,8 +9,6 @@ class Character(Object):
                        "played_time": list,
                        "kills": list,
                        "deads": list,
-                       "offensive_assists": list,
-                       "defensive_assists": list,
                        "ultimate_charged": list,
                        "ultimate_use": list}
         

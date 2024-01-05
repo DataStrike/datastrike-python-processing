@@ -50,7 +50,7 @@ class Match(Object):
         if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
             return -2
         else:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deads": [], "offensive_assists": [], "defensive_assists": [], "ultimate_charged": [], "ultimate_use": []})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deads": [], "ultimate_charged": [], "ultimate_use": []})
 
         if len(self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time) > 0:
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time[-1]["end"] = data["time"]
