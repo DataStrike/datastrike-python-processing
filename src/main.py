@@ -9,10 +9,10 @@ class DatastrikePythonProcessing:
 
         self.running = True
 
-        self.producer_thread = ProducerThread("localhost:29093")
+        self.producer_thread = ProducerThread("localhost:29092")
         
-        self.consumer_thread = ConsumerThread("localhost:29093")
-        self.consumer_thread.add_topics("test", self.on_callback_test)
+        self.consumer_thread = ConsumerThread("localhost:29092")
+        self.consumer_thread.add_topics("analyse", self.on_callback_test)
         
         self.consumer_thread.start()
         self.producer_thread.start()
@@ -20,7 +20,8 @@ class DatastrikePythonProcessing:
         
     def on_callback_test(self, topic, data):
         print("message receive : ", topic, data)
-        print("a")
+
+        self.producer_thread.send("analyse_report", "test")
 
     def run(self):
 
