@@ -2,6 +2,7 @@ import signal
 import time
 import sys
 from kafka_lib import ProducerThread, ConsumerThread
+from log_analyser.log_analyser import LogAnalyser
 
 
 class DatastrikePythonProcessing:
@@ -21,7 +22,10 @@ class DatastrikePythonProcessing:
     def on_callback_test(self, topic, data):
         print("message receive : ", topic, data)
 
-        self.producer_thread.send("analyse_report", "test")
+        la = LogAnalyser('logs/Log-2023-12-22-21-12-32.txt', "Log-2023-12-22-21-12-32.txt")
+        la.run()
+        a = la.match.export_json()
+        self.producer_thread.send("analyse.report", la.match.export_json())
 
     def run(self):
 

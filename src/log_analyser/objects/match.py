@@ -1,6 +1,6 @@
-from objects.object import Object
-from objects.round import Round
-from objects.team import Team
+from log_analyser.objects.object import Object
+from log_analyser.objects.round import Round
+from log_analyser.objects.team import Team
 from datetime import datetime
 
 

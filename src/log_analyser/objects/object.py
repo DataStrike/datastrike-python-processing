@@ -55,8 +55,8 @@ class Object:
                 dict_class_final.pop(key)
             else:
                 dict_class_final[key] = self.export_json_recursive(value)
-        return json.dumps(dict_class_final, indent=4, sort_keys=True, default=str)
-
+        # return json.dumps(dict_class_final, indent=4, sort_keys=True, default=str)
+        return json.dumps(dict_class_final, skipkeys=False, ensure_ascii=True, check_circular=True)
     def convert_timefile_to_datetime(self, time_string):
 
 

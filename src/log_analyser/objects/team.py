@@ -1,5 +1,6 @@
-from objects.object import Object
-from objects.player import Player
+from log_analyser.objects.object import Object
+from log_analyser.objects.player import Player
+
 
 class Team(Object):
     

@@ -1,6 +1,6 @@
 import os
 from datetime import datetime, timedelta
-from objects.match import Match
+from log_analyser.objects.match import Match
 
 
 class LogAnalyser:
@@ -29,8 +29,8 @@ class LogAnalyser:
                     if type in self.actions:
                         self.actions[type](line_split)
 
-        with open("../logs_process/{}.json".format(self.name.split(".")[0]), "w") as file:
-            file.write(self.match.export_json())
+        # with open("../logs_process/{}.json".format(self.name.split(".")[0]), "w") as file:
+        #     file.write(self.match.export_json())
 
 
     def name2datetime(self):
@@ -87,11 +87,11 @@ class LogAnalyser:
         return duration
 
 
-for file in os.listdir("../logs"):
-    if file.endswith(".txt"):
-        print(file)
-        la = LogAnalyser('../logs/{}'.format(file), file)
-        la.run()
+# for file in os.listdir("../logs"):
+#     if file.endswith(".txt"):
+#         print(file)
+#         la = LogAnalyser('../logs/{}'.format(file), file)
+#         la.run()
 
 # la = LogAnalyser('../logs/Log-2023-12-22-21-12-32.txt', "Log-2023-12-22-21-12-32.txt")
 # la.run()

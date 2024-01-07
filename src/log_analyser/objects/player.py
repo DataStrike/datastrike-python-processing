@@ -1,6 +1,6 @@
 # from src.log_analyser.character import Character
-from objects.object import Object
-from objects.character import Character
+from log_analyser.objects.object import Object
+from log_analyser.objects.character import Character
 
 
 class Player(Object):

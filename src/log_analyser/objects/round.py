@@ -1,5 +1,5 @@
-from objects.object import Object
-from objects.team import Team
+from log_analyser.objects.object import Object
+from log_analyser.objects.team import Team
 
 
 class Round(Object):
