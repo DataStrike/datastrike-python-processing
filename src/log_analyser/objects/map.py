@@ -14,8 +14,9 @@ class Map(Object):
                        "map_type": str,
                        "team1_name": str,
                        "team2_name": str,
-                       "score_team1": int,
-                       "score_team2": int,
+                       "team1_score": int,
+                       "team2_score": int,
+                       "team_id": str
                        }
 
         super().__init__(data_schema, **kwargs)
@@ -139,7 +140,7 @@ class Map(Object):
 
     def end_round(self, data):
 
-        end_round_data = {"time": data[2], "score_team1": data[5], "score_team2": data[6]}
+        end_round_data = {"time": data[2], "team1_score": data[5], "team2_score": data[6]}
 
         for team in self.rounds[self.actual_round].teams:
             for player in self.rounds[self.actual_round].teams[team].players:
@@ -148,13 +149,13 @@ class Map(Object):
                         self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]["end"] = end_round_data["time"]
 
 
-        self.score_team1 = end_round_data["score_team1"]
-        self.score_team2 = end_round_data["score_team2"]
+        self.score_team1 = end_round_data["team1_score"]
+        self.score_team2 = end_round_data["team2_score"]
         print("###### END ROUND {} #######\n".format(self.actual_round))
 
     def end_map(self, data):
 
-        end_map_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
+        end_map_data = {"time": data[2], "team1_score": data[4], "team2_score": data[5]}
 
-        self.score_team1 = end_map_data["score_team1"]
-        self.score_team2 = end_map_data["score_team2"]
+        self.score_team1 = end_map_data["team1_score"]
+        self.score_team2 = end_map_data["team2_score"]

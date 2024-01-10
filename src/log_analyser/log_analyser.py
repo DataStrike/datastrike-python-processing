@@ -5,10 +5,11 @@ from log_analyser.objects.map import Map
 
 class LogAnalyser:
     
-    def __init__(self, path_csv, name) -> None:
+    def __init__(self, path, name, team_id) -> None:
         
-        self.path_csv = path_csv
+        self.path_csv = "{}/{}".format(path, name)
         self.name = name
+        self.team_id = team_id
         
         self.date = self.name2datetime()
         
@@ -48,8 +49,9 @@ class LogAnalyser:
                        "map_type": data[4],
                        "team1_name": data[5],
                        "team2_name": data[6],
-                       "score_team1": 0,
-                       "score_team2": 0,
+                       "team1_score": 0,
+                       "team2_score": 0,
+                       "team_id": self.team_id
                        })
 
         self.actions = {"match_start": self.process_map_start,
