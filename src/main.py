@@ -2,18 +2,18 @@ import signal
 import time
 import sys
 from kafka_lib import ProducerThread, ConsumerThread
+from log_analyser.log_analyser import LogAnalyser
 
 
 class DatastrikePythonProcessing:
     def __init__(self):
 
         self.running = True
+
+        self.producer_thread = ProducerThread("localhost:29092")
         
-        
-        self.producer_thread = ProducerThread("localhost:29093")
-        
-        self.consumer_thread = ConsumerThread("localhost:29093")
-        self.consumer_thread.add_topics("test", self.on_callback_test)
+        self.consumer_thread = ConsumerThread("localhost:29092")
+        self.consumer_thread.add_topics("analyse", self.on_callback_test)
         
         self.consumer_thread.start()
         self.producer_thread.start()
@@ -21,12 +21,15 @@ class DatastrikePythonProcessing:
         
     def on_callback_test(self, topic, data):
         print("message receive : ", topic, data)
-        print("a")
+
+        la = LogAnalyser('logs/Log-2023-12-22-21-12-32.txt', "Log-2023-12-22-21-12-32.txt")
+        la.run()
+        self.producer_thread.send("analyse.report", la.map.export_json())
 
     def run(self):
 
         while self.running:
-            print("Service en cours d'exécution...")
+            # print("Service en cours d'exécution...")
             time.sleep(1)
 
         print("Service stop.")

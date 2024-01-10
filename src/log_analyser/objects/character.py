@@ -1,4 +1,4 @@
-from objects.object import Object
+from log_analyser.objects.object import Object
 
 
 class Character(Object):
@@ -8,9 +8,7 @@ class Character(Object):
                        "stats": dict,
                        "played_time": list,
                        "kills": list,
-                       "deads": list,
-                       "offensive_assists": list,
-                       "defensive_assists": list,
+                       "deaths": list,
                        "ultimate_charged": list,
                        "ultimate_use": list}
         
@@ -24,7 +22,7 @@ class Character(Object):
         self.kills.append(data)
 
     def add_death(self, data):
-        self.deads.append(data)
+        self.deaths.append(data)
 
     def add_offensive_assist(self, data):
         self.offensive_assists.append(data)

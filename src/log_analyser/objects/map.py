@@ -1,10 +1,10 @@
-from objects.object import Object
-from objects.round import Round
-from objects.team import Team
+from log_analyser.objects.object import Object
+from log_analyser.objects.round import Round
+from log_analyser.objects.team import Team
 from datetime import datetime
 
 
-class Match(Object):
+class Map(Object):
 
     def __init__(self, **kwargs):
 
@@ -50,7 +50,7 @@ class Match(Object):
         if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
             return -2
         else:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deads": [], "offensive_assists": [], "defensive_assists": [], "ultimate_charged": [], "ultimate_use": []})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deaths": [], "ultimate_charged": [], "ultimate_use": []})
 
         if len(self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time) > 0:
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time[-1]["end"] = data["time"]
@@ -152,9 +152,9 @@ class Match(Object):
         self.score_team2 = end_round_data["score_team2"]
         print("###### END ROUND {} #######\n".format(self.actual_round))
 
-    def end_match(self, data):
+    def end_map(self, data):
 
-        end_match_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
+        end_map_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
 
-        self.score_team1 = end_match_data["score_team1"]
-        self.score_team2 = end_match_data["score_team2"]
+        self.score_team1 = end_map_data["score_team1"]
+        self.score_team2 = end_map_data["score_team2"]
