@@ -24,13 +24,12 @@ class DatastrikePythonProcessing:
 
         la = LogAnalyser('logs/Log-2023-12-22-21-12-32.txt', "Log-2023-12-22-21-12-32.txt")
         la.run()
-        a = la.match.export_json()
-        self.producer_thread.send("analyse.report", la.match.export_json())
+        self.producer_thread.send("analyse.report", la.map.export_json())
 
     def run(self):
 
         while self.running:
-            print("Service en cours d'exécution...")
+            # print("Service en cours d'exécution...")
             time.sleep(1)
 
         print("Service stop.")

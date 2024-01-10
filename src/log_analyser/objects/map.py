@@ -4,7 +4,7 @@ from log_analyser.objects.team import Team
 from datetime import datetime
 
 
-class Match(Object):
+class Map(Object):
 
     def __init__(self, **kwargs):
 
@@ -152,9 +152,9 @@ class Match(Object):
         self.score_team2 = end_round_data["score_team2"]
         print("###### END ROUND {} #######\n".format(self.actual_round))
 
-    def end_match(self, data):
+    def end_map(self, data):
 
-        end_match_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
+        end_map_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
 
-        self.score_team1 = end_match_data["score_team1"]
-        self.score_team2 = end_match_data["score_team2"]
+        self.score_team1 = end_map_data["score_team1"]
+        self.score_team2 = end_map_data["score_team2"]

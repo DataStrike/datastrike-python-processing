@@ -31,7 +31,7 @@ class Object:
             dict_class_final = dict_class.copy()
 
             for key, value in dict_class.items():
-                if not key in data.class_model:
+                if not key in data.class_model and key != "class_name":
                     dict_class_final.pop(key)
 
             return data.export_json_recursive(dict_class_final)
@@ -51,7 +51,7 @@ class Object:
         dict_class_final = dict_class.copy()
 
         for key, value in dict_class.items():
-            if not key in self.class_model:
+            if not key in self.class_model and key != "class_name":
                 dict_class_final.pop(key)
             else:
                 dict_class_final[key] = self.export_json_recursive(value)

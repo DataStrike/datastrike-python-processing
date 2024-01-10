@@ -1,6 +1,6 @@
 import os
 from datetime import datetime, timedelta
-from log_analyser.objects.match import Match
+from log_analyser.objects.map import Map
 
 
 class LogAnalyser:
@@ -12,9 +12,9 @@ class LogAnalyser:
         
         self.date = self.name2datetime()
         
-        self.match = None
+        self.map = None
         
-        self.actions = {"match_start": self.process_match_start}
+        self.actions = {"match_start": self.process_map_start}
         
     def run(self):
         
@@ -30,7 +30,7 @@ class LogAnalyser:
                         self.actions[type](line_split)
 
         # with open("../logs_process/{}.json".format(self.name.split(".")[0]), "w") as file:
-        #     file.write(self.match.export_json())
+        #     file.write(self.map.export_json())
 
 
     def name2datetime(self):
@@ -40,9 +40,9 @@ class LogAnalyser:
         
         return date_object
 
-    def process_match_start(self, data):
+    def process_map_start(self, data):
 
-        self.match = Match.from_json({"rounds": [], 
+        self.map = Map.from_json({"rounds": [],
                        "date": self.date,
                        "map_name": data[3],
                        "map_type": data[4],
@@ -52,30 +52,30 @@ class LogAnalyser:
                        "score_team2": 0,
                        })
 
-        self.actions = {"match_start": self.process_match_start,
-                        "round_start": self.match.add_round,
-                        "round_end": self.match.end_round,
+        self.actions = {"match_start": self.process_map_start,
+                        "round_start": self.map.add_round,
+                        "round_end": self.map.end_round,
                         "hero_spawn": self.process_hero_spawn,
                         "hero_swap": self.process_hero_swap,
-                        "kill": self.match.add_kill,
-                        "ultimate_charged": self.match.add_ultimate_charged,
-                        "ultimate_start": self.match.add_ultimate_start,
-                        "ultimate_end": self.match.add_ultimate_end,
-                        "objective_captured": self.match.add_objective_captured,
-                        "player_stat": self.match.add_player_stat,
-                        "point_progress": self.match.add_objective_progress,
-                        "payload_progress": self.match.add_objective_progress,
+                        "kill": self.map.add_kill,
+                        "ultimate_charged": self.map.add_ultimate_charged,
+                        "ultimate_start": self.map.add_ultimate_start,
+                        "ultimate_end": self.map.add_ultimate_end,
+                        "objective_captured": self.map.add_objective_captured,
+                        "player_stat": self.map.add_player_stat,
+                        "point_progress": self.map.add_objective_progress,
+                        "payload_progress": self.map.add_objective_progress,
                         }
 
     def process_hero_spawn(self, data):
 
         player_data = {"time": data[2], "team_name": data[3], "player_name": data[4], "character_name": data[5]}
-        self.match.add_player(player_data)
+        self.map.add_player(player_data)
 
     def process_hero_swap(self, data):
 
         hero_data = {"time": data[2], "team_name": data[3], "player_name": data[4], "character_name": data[5], "character_swap": data[6]}
-        self.match.add_hero_swap(hero_data)
+        self.map.add_hero_swap(hero_data)
 
     def convert_timefile_to_datetime(self, time_string):
 
