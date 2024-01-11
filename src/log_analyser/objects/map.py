@@ -16,7 +16,8 @@ class Map(Object):
                        "team2_name": str,
                        "team1_score": int,
                        "team2_score": int,
-                       "team_id": str
+                       "team_id": str,
+                       "events": list,
                        }
 
         super().__init__(data_schema, **kwargs)
@@ -29,6 +30,8 @@ class Map(Object):
         teams[self.team1_name] = Team.from_json({"name": self.team1_name, "players": {}})
         teams[self.team2_name] = Team.from_json({"name": self.team2_name, "players": {}})
         self.rounds.append(Round.from_json({"teams": teams, "start_time": data[2], "objective_captured": [], "objective_progress": []}))
+
+        self.events.append({"type": "round_start", "timestamp": data[2], "value": 1, "description": "Round {} start".format(len(self.rounds))})
 
         self.actual_round += 1
 
@@ -74,6 +77,8 @@ class Map(Object):
 
         self.rounds[self.actual_round].teams[data[3]].players[data[4]].characters[data[5]].add_kill(killer_data)
         self.rounds[self.actual_round].teams[data[6]].players[data[7]].characters[data[8]].add_death(victim_data)
+
+        self.events.append({"type": "kill", "timestamp": data[2], "value": 1, "description": "{} kill {}".format(data[4], data[7])})
 
     def add_player_stat(self, data):
 
@@ -149,13 +154,16 @@ class Map(Object):
                         self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]["end"] = end_round_data["time"]
 
 
-        self.score_team1 = end_round_data["team1_score"]
-        self.score_team2 = end_round_data["team2_score"]
+        self.team1_score = end_round_data["team1_score"]
+        self.team2_score = end_round_data["team2_score"]
+        print(" score team 1 : ", self.team1_score)
+        print(" score team 2 : ", self.team2_score)
         print("###### END ROUND {} #######\n".format(self.actual_round))
+
 
     def end_map(self, data):
 
         end_map_data = {"time": data[2], "team1_score": data[4], "team2_score": data[5]}
 
-        self.score_team1 = end_map_data["team1_score"]
-        self.score_team2 = end_map_data["team2_score"]
+        self.team1_score = end_map_data["team1_score"]
+        self.team2_score = end_map_data["team2_score"]

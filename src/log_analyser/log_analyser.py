@@ -51,7 +51,8 @@ class LogAnalyser:
                        "team2_name": data[6],
                        "team1_score": 0,
                        "team2_score": 0,
-                       "team_id": self.team_id
+                       "team_id": self.team_id,
+                       "events": []
                        })
 
         self.actions = {"match_start": self.process_map_start,
