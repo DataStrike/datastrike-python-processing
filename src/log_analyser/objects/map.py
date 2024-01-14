@@ -14,8 +14,10 @@ class Map(Object):
                        "map_type": str,
                        "team1_name": str,
                        "team2_name": str,
-                       "score_team1": int,
-                       "score_team2": int,
+                       "team1_score": int,
+                       "team2_score": int,
+                       "team_id": str,
+                       "events": list,
                        }
 
         super().__init__(data_schema, **kwargs)
@@ -27,11 +29,14 @@ class Map(Object):
         teams = {}
         teams[self.team1_name] = Team.from_json({"name": self.team1_name, "players": {}})
         teams[self.team2_name] = Team.from_json({"name": self.team2_name, "players": {}})
-        self.rounds.append(Round.from_json({"teams": teams, "start_time": data[2], "objective_captured": [], "objective_progress": []}))
+        self.rounds.append(Round.from_json({"teams": teams, "start_time": data[2], "end_time": "", "objective_captured": [], "objective_progress": []}))
+
+        # self.events.append({"type": "round_start", "timestamp": data[2], "value": 1, "description": "Round {} start".format(len(self.rounds))})
 
         self.actual_round += 1
 
         print("###### NEW ROUND {} #######".format(self.actual_round))
+
 
     def add_player(self, data):
 
@@ -74,15 +79,22 @@ class Map(Object):
         self.rounds[self.actual_round].teams[data[3]].players[data[4]].characters[data[5]].add_kill(killer_data)
         self.rounds[self.actual_round].teams[data[6]].players[data[7]].characters[data[8]].add_death(victim_data)
 
+        team = self.find_team_for_player(data[4])
+
+        if team == list(self.rounds[self.actual_round].teams.keys())[0]:
+            self.events.append({"type": "kill_team1", "timestamp": data[2], "value": 1, "description": "{} kill {}".format(data[4], data[7])})
+        else:
+            self.events.append({"type": "kill_team2", "timestamp": data[2], "value": 1,
+                                "description": "{} kill {}".format(data[4], data[7])})
     def add_player_stat(self, data):
 
         # self.create_if_player_and_caracter_not_exist(data[4], data[5], data[6])
 
-        player_data = {"eliminations": data[6], "final_blows": data[7], "deaths": data[8], "damage": data[9],
-                       "barrier_damage": data[10], "hero_damage": data[11], "healing": data[12], "healing_receive": data[13],
-                       "self_healing": data[14], "damage_taken": data[15], "damage_blocked": data[16], "defensive_assist": data[17],
-                       "offensive_assists": data[18], "ultimated_earn": data[19], "ultimates_used": data[20], "solo_kills": data[23],
-                       "critical_hits_accuracy": data[28], "weapon_accuracy": data[37], "hero_time_played": data[38]}
+        player_data = {"eliminations": data[7], "final_blows": data[8], "deaths": data[9], "damage": data[10],
+                       "barrier_damage": data[11], "hero_damage": data[12], "healing": data[13], "healing_receive": data[14],
+                       "self_healing": data[15], "damage_taken": data[16], "damage_blocked": data[17], "defensive_assist": data[18],
+                       "offensive_assists": data[19], "ultimated_earn": data[20], "ultimates_used": data[21], "solo_kills": data[24],
+                       "critical_hits_accuracy": data[29], "weapon_accuracy": data[38], "hero_time_played": data[39]}
 
         if player_data["hero_time_played"] != "0" and data[6] in self.rounds[self.actual_round].teams[data[4]].players[data[5]].characters:
             self.rounds[self.actual_round].teams[data[4]].players[data[5]].characters[data[6]].add_character_stats(player_data)
@@ -139,8 +151,8 @@ class Map(Object):
 
     def end_round(self, data):
 
-        end_round_data = {"time": data[2], "score_team1": data[5], "score_team2": data[6]}
-
+        end_round_data = {"time": data[2], "team1_score": data[5], "team2_score": data[6]}
+        self.rounds[self.actual_round].end_time = data[2]
         for team in self.rounds[self.actual_round].teams:
             for player in self.rounds[self.actual_round].teams[team].players:
                 for character in self.rounds[self.actual_round].teams[team].players[player].characters:
@@ -148,13 +160,25 @@ class Map(Object):
                         self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]["end"] = end_round_data["time"]
 
 
-        self.score_team1 = end_round_data["score_team1"]
-        self.score_team2 = end_round_data["score_team2"]
+        self.team1_score = end_round_data["team1_score"]
+        self.team2_score = end_round_data["team2_score"]
+        print(" score team 1 : ", self.team1_score)
+        print(" score team 2 : ", self.team2_score)
         print("###### END ROUND {} #######\n".format(self.actual_round))
+
 
     def end_map(self, data):
 
-        end_map_data = {"time": data[2], "score_team1": data[4], "score_team2": data[5]}
+        end_map_data = {"time": data[2], "team1_score": data[4], "team2_score": data[5]}
 
-        self.score_team1 = end_map_data["score_team1"]
-        self.score_team2 = end_map_data["score_team2"]
+        self.team1_score = end_map_data["team1_score"]
+        self.team2_score = end_map_data["team2_score"]
+
+
+    def find_team_for_player(self, player_name):
+
+        for team in self.rounds[self.actual_round].teams:
+            if player_name in self.rounds[self.actual_round].teams[team].players:
+                return team
+
+        return None

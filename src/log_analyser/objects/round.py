@@ -8,6 +8,7 @@ class Round(Object):
         
         data_schema = {"teams": dict,
                        "start_time": str,
+                       "end_time": str,
                        "objective_captured": list,
                        "objective_progress": list
                        }

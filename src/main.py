@@ -22,10 +22,24 @@ class DatastrikePythonProcessing:
     def on_callback_test(self, topic, data):
         print("message receive : ", topic, data)
 
-        la = LogAnalyser('logs/Log-2023-12-22-21-12-32.txt', "Log-2023-12-22-21-12-32.txt")
-        la.run()
-        self.producer_thread.send("analyse.report", la.map.export_json())
+        filePath = data["filePath"]
+        fileName = data["fileName"]
+        teamId = data["teamId"]
 
+        if self.check_txt_extension(fileName):
+
+            la = LogAnalyser(filePath, fileName, teamId)
+            la.run()
+            if la.map != None:
+                self.producer_thread.send("analyse.report", la.map.export_json())
+            else:
+                self.producer_thread.send("analyse.report", {"error": "File txt not correct"})
+
+        else:
+            self.producer_thread.send("analyse.report", {"error": "File extension not correct"})
+
+    def check_txt_extension(self, filename):
+        return filename.lower().endswith('.txt')
     def run(self):
 
         while self.running:
