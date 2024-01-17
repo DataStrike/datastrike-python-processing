@@ -127,6 +127,9 @@ class Map(Object):
         ultimate_start_data = {"start": data[2]}
         self.rounds[self.actual_round].teams[data[3]].players[data[4]].characters[data[5]].add_ultimate_start(ultimate_start_data)
 
+        self.events.append({"type": "ultimate", "timestamp": data[2], "player": data[4],
+                            "description": "{} use {} ultimate".format(data[4], data[5])})
+
     def add_ultimate_end(self, data):
 
         self.create_if_player_and_caracter_not_exist(data[3], data[4], data[5])
@@ -147,7 +150,6 @@ class Map(Object):
                                   "control_team2_progress": data[7]}
 
         self.rounds[self.actual_round].add_objective_captured(objective_capture_data)
-
 
     def add_objective_progress(self, data):
 
