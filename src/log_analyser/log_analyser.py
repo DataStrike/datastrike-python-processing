@@ -30,8 +30,7 @@ class LogAnalyser:
                     if type in self.actions:
                         self.actions[type](line_split)
 
-        # with open("../logs_process/{}.json".format(self.name.split(".")[0]), "w") as file:
-        #     file.write(self.map.export_json())
+        self.map.aggregate_stats()
 
 
     def name2datetime(self):
@@ -43,6 +42,7 @@ class LogAnalyser:
 
     def process_map_start(self, data):
 
+        print("New map : {}".format(data[3]))
         self.map = Map.from_json({"rounds": [],
                        "date": self.date,
                        "map_name": data[3],
@@ -52,7 +52,8 @@ class LogAnalyser:
                        "team1_score": 0,
                        "team2_score": 0,
                        "team_id": self.team_id,
-                       "events": []
+                       "events": [],
+                       "stats_graph": {},
                        })
 
         self.actions = {"match_start": self.process_map_start,

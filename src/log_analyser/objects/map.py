@@ -18,6 +18,7 @@ class Map(Object):
                        "team2_score": int,
                        "team_id": str,
                        "events": list,
+                       "stats_graph": dict,
                        }
 
         super().__init__(data_schema, **kwargs)
@@ -102,7 +103,9 @@ class Map(Object):
                        "offensive_assists": data[19], "ultimated_earn": data[20], "ultimates_used": data[21], "solo_kills": data[24],
                        "critical_hits_accuracy": data[29], "weapon_accuracy": data[38], "hero_time_played": data[39]}
 
-        if player_data["hero_time_played"] != "0" and data[6] in self.rounds[self.actual_round].teams[data[4]].players[data[5]].characters:
+        if player_data["hero_time_played"] != "0":
+            if not data[6] in self.rounds[self.actual_round].teams[data[4]].players[data[5]].characters:
+                self.add_character({"time": data[2], "team_name": data[4], "player_name": data[5], "character_name": data[6]})
             self.rounds[self.actual_round].teams[data[4]].players[data[5]].characters[data[6]].add_character_stats(player_data)
 
     def add_hero_swap(self, data):
@@ -111,6 +114,8 @@ class Map(Object):
         if data["character_swap"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_played_time({"end": data["time"]})
 
+        self.events.append({"type": "hero_swap", "timestamp": data["time"], "player": data["player_name"],
+                            "description": "{} swap on {}".format(data["player_name"], data["character_swap"])})
 
     def create_if_player_and_caracter_not_exist(self, team, player_name, character_name):
 
@@ -190,3 +195,30 @@ class Map(Object):
                 return team
 
         return None
+
+    def aggregate_stats(self):
+        players_data = {}
+
+        for index, round_data in enumerate(self.rounds):
+            print("### Round {} ###".format(index))
+            for _, team in round_data.teams.items():
+                for _, player in team.players.items():
+
+                    aggregated_stats = {}
+
+                    for character in player.characters.values():
+                        if character.stats:
+                            for key, value in character.stats.items():
+                                try:
+                                    numeric_value = float(value)
+                                    aggregated_stats[key] = aggregated_stats.get(key, 0) + numeric_value
+                                except ValueError:
+                                    print("ValueError: ", value, player.name, character.name, key)
+                                    aggregated_stats[key] = value
+
+                    if any(isinstance(value, (int, float)) and value == value for value in aggregated_stats.values()):
+                        player_name = player.name
+                        players_data[player_name] = players_data.get(player_name, [])
+                        players_data[player_name].append({"round": index, "stats": aggregated_stats})
+
+        self.stats_graph = players_data
