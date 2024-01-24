@@ -3,6 +3,7 @@ import time
 import sys
 from kafka_lib import ProducerThread, ConsumerThread
 from log_analyser.log_analyser import LogAnalyser
+import configparser
 
 
 class DatastrikePythonProcessing:
@@ -10,9 +11,16 @@ class DatastrikePythonProcessing:
 
         self.running = True
 
-        self.producer_thread = ProducerThread("localhost:29092")
+        self.config = configparser.ConfigParser()
+        self.config.read("datastrike_python_processing.cfg")
+
+
+        self.kafka_url = self.config["kafka"]["url"]
+
+        print(self.kafka_url)
+        self.producer_thread = ProducerThread(self.kafka_url)
         
-        self.consumer_thread = ConsumerThread("localhost:29092")
+        self.consumer_thread = ConsumerThread(self.kafka_url)
         self.consumer_thread.add_topics("analyse", self.on_callback_test)
         
         self.consumer_thread.start()
@@ -28,13 +36,15 @@ class DatastrikePythonProcessing:
 
         if self.check_txt_extension(fileName):
 
-            la = LogAnalyser(filePath, fileName, teamId)
-            la.run()
-            if la.map != None:
-                self.producer_thread.send("analyse.report", la.map.export_json())
-            else:
-                self.producer_thread.send("analyse.report", {"error": "File txt not correct"})
-
+            try:
+                la = LogAnalyser(filePath, fileName, teamId)
+                la.run()
+                if la.map != None:
+                    self.producer_thread.send("analyse.report", la.map.export_json())
+                else:
+                    self.producer_thread.send("analyse.report", {"error": "File txt not correct"})
+            except Exception as e:
+                self.producer_thread.send("analyse.report", {"error": "{}".format(e)})
         else:
             self.producer_thread.send("analyse.report", {"error": "File extension not correct"})
 
