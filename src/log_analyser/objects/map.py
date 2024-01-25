@@ -100,7 +100,7 @@ class Map(Object):
         player_data = {"eliminations": data[7], "final_blows": data[8], "deaths": data[9], "damage": data[10],
                        "barrier_damage": data[11], "hero_damage": data[12], "healing": data[13], "healing_receive": data[14],
                        "self_healing": data[15], "damage_taken": data[16], "damage_blocked": data[17], "defensive_assist": data[18],
-                       "offensive_assists": data[19], "ultimated_earn": data[20], "ultimates_used": data[21], "solo_kills": data[24],
+                       "offensive_assists": data[19], "ultimates_earned": data[20], "ultimates_used": data[21], "solo_kills": data[24],
                        "critical_hits_accuracy": data[29], "weapon_accuracy": data[38], "hero_time_played": data[39]}
 
         if player_data["hero_time_played"] != "0":
