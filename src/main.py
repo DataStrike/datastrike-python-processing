@@ -4,6 +4,7 @@ import sys
 from kafka_lib import ProducerThread, ConsumerThread
 from log_analyser.log_analyser import LogAnalyser
 import configparser
+import os
 
 
 class DatastrikePythonProcessing:
@@ -47,6 +48,10 @@ class DatastrikePythonProcessing:
                 self.producer_thread.send("analyse.report", {"error": "{}".format(e)})
         else:
             self.producer_thread.send("analyse.report", {"error": "File extension not correct"})
+        try:
+            os.remove("{}/{}".format(filePath, fileName))
+        except Exception as e:
+            print("Error remove file : {}".format(e))
 
     def check_txt_extension(self, filename):
         return filename.lower().endswith('.txt')
