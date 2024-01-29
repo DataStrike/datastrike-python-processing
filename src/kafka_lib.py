@@ -18,8 +18,6 @@ class ProducerThread(threading.Thread):
         self.date = date
         self.nb_try_connection = nb_try_connection
 
-
-
         self.init_producer_ok, self.producer = self.init_producer(url)
         self.queue_sender = queue.Queue(2)
 
