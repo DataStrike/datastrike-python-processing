@@ -115,7 +115,7 @@ class Map(Object):
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_played_time({"end": data["time"]})
 
         self.events.append({"type": "hero_swap", "timestamp": data["time"], "player": data["player_name"],
-                            "description": "{} swap on {}".format(data["player_name"], data["character_swap"])})
+                            "description": "{} swap on {}".format(data["player_name"], data["character_name"])})
 
     def create_if_player_and_caracter_not_exist(self, team, player_name, character_name):
 
