@@ -1,0 +1,181 @@
+{
+  "D.Va":{
+        "name": "D.Va",
+        "role": "Tank"
+  },
+  "Doomfist": {
+    "name": "Doomfist",
+    "role": "Tank"
+  },
+  "Reine des Junkers": {
+    "name": "Junker Queen",
+    "role": "Tank"
+  },
+
+  "Mauga": {
+    "name": "Mauga",
+    "role": "Tank"
+  },
+    "Orisa":{
+        "name": "Orisa",
+        "role": "Tank"
+    },
+  "Ramattra": {
+    "name": "Ramattra",
+    "role": "Tank"
+  },
+  "Reinhardt":{
+          "name": "Reinhardt",
+          "role": "Tank"
+  },
+  "Chopper":{
+      "name": "Roadhog",
+        "role": "Tank"
+  },
+  "Sigma": {
+    "name": "Sigma",
+    "role": "Tank"
+  },
+    "Winston": {
+      "name": "Winston",
+      "role": "Tank"
+    },
+    "Bouldozer":{
+        "name": "Wrecking Ball",
+        "role": "Tank"
+    },
+  "Zarya": {
+    "name": "Zarya",
+    "role": "Tank"
+  },
+
+  "Ash":{
+      "name": "Ashe",
+      "role": "Offense",
+    },
+    "Bastion":{
+        "name": "Bastion",
+        "role": "Offense"
+    },
+  "Cassidy":{
+      "name": "Cassidy",
+      "role": "Offense",
+    },
+
+  "Echo": {
+    "name": "Echo",
+    "role": "Offense"
+  },
+
+  "Genji":{
+      "name": "Genji",
+      "role": "Offense"
+  },
+
+  "Hanzo":{
+        "name": "Hanzo",
+        "role": "Offense"
+  },
+
+  "Junkrat":{
+      "name": "Chacal",
+      "role": "Offense"
+  },
+
+  "Mei":{
+      "name": "Mei",
+      "role": "Offense"
+  },
+
+  "Pharah":{
+      "name": "Pharah",
+      "role": "Offense"
+  },
+
+  "Faucheur":{
+      "name": "Reaper",
+      "role": "Offense"
+  },
+
+  "Sojourn": {
+    "name": "Sojourn",
+    "role": "Offense"
+  },
+
+  "Soldat: 76":{
+      "name": "Soldier: 76",
+      "role": "Offense"
+  },
+
+  "Sombra":{
+      "name": "Sombra",
+      "role": "Offense"
+  },
+
+  "Symmetra":{
+      "name": "Symmetra",
+      "role": "Offense"
+  },
+
+  "Torbjörn":{
+      "name": "Torbjörn",
+      "role": "Offense"
+  },
+
+  "Tracer":{
+      "name": "Tracer",
+      "role": "Offense",
+  },
+
+  "Fatal":{
+      "name": "Widowmaker",
+      "role": "Offense"
+  },
+
+  "Ana":{
+      "name": "Ana",
+      "role": "Support"
+  },
+  "Baptiste":{
+      "name": "Baptiste",
+      "role": "Support"
+  },
+
+  "Brigitte":{
+      "name": "Brigitte",
+      "role": "Support"
+  },
+
+  "Illari":{
+      "name": "Illari",
+      "role": "Support"
+  },
+
+  "Kiriko":{
+      "name": "Kiriko",
+      "role": "Support"
+  },
+
+  "Vital":{
+      "name": "Lifeweaver",
+      "role": "Support"
+  },
+
+  "Lúcio":{
+    "name": "Lúcio",
+    "role": "Support"
+  },
+  "Mercy":{
+    "name": "Mercy",
+    "role": "Support"
+  },
+
+  "Moira":{
+      "name": "Moira",
+      "role": "Support"
+  },
+  "Zenyatta":{
+      "name": "Zenyatta",
+      "role": "Support"
+  }
+}
