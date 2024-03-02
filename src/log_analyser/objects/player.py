@@ -20,6 +20,8 @@ class Player(Object):
 
     def find_role(self):
 
+        if self.name == "MrSully":
+            pass
         roles_time = {"Tank": 0, "DPS": 0, "Support": 0}
         for character in self.characters:
             character_role = self.characters[character].role
@@ -28,4 +30,7 @@ class Player(Object):
                     if "end" in play_time and "start" in play_time:
                         roles_time[character_role] += float(play_time["end"]) - float(play_time["start"])
 
-        self.role = max(roles_time, key=roles_time.get)
+        if sum(roles_time.values()) == 0:
+            self.role = "Unknown"
+        else:
+            self.role = max(roles_time, key=roles_time.get)
