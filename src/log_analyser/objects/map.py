@@ -124,16 +124,7 @@ class Map(Object):
         self.events.append({"type": "hero_swap", "timestamp": data["time"], "player": data["player_name"],
                             "description": "{} swap on {}".format(data["player_name"], data["character_swap"])})
 
-        print("{}, {} swap on {}".format(data["player_name"], data["character_name"], data["character_swap"]))
-        print("old {} time : {}".format(data["character_name"], self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time))
-        print("new {} time : {}".format(data["character_swap"], self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].played_time))
-        print("############")
 
-    def add_hero_spawn(self, data):
-
-        self.add_player(data)
-        self.events.append({"type": "hero_spawn", "timestamp": data["time"], "player": data["player_name"],
-                            "description": "{} spawn on {}".format(data["player_name"], data["character_name"])})
     def create_if_player_and_caracter_not_exist(self, team, player_name, character_name):
 
         if not player_name in self.rounds[self.actual_round].teams[team].players:
