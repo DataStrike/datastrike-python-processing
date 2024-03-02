@@ -1,0 +1,47 @@
+{
+  "Tank": [
+    "D.Va",
+    "Doomfist",
+    "Junker Queen",
+    "Mauga",
+    "Orisa",
+    "Ramattra",
+    "Reinhardt",
+    "Roadhog",
+    "Sigma",
+    "Winston",
+    "Wrecking Ball",
+    "Zarya"
+  ],
+  "DPS": [
+    "Ashe",
+    "Bastion",
+    "Cassidy",
+    "Echo",
+    "Genji",
+    "Hanzo",
+    "Junkrat",
+    "Mei",
+    "Pharah",
+    "Reaper",
+    "Sojourn",
+    "Soldier: 76",
+    "Sombra",
+    "Symmetra",
+    "Torbjörn",
+    "Tracer",
+    "Widowmaker"
+  ],
+  "Support": [
+    "Ana",
+    "Baptiste",
+    "Brigitte",
+    "Illari",
+    "Kiriko",
+    "Lifeweaver",
+    "Lúcio",
+    "Mercy",
+    "Moira",
+    "Zenyatta"
+  ]
+}

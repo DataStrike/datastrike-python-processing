@@ -74,11 +74,11 @@ class LogAnalyser:
     def process_hero_spawn(self, data):
 
         player_data = {"time": data[2], "team_name": data[3], "player_name": data[4], "character_name": data[5]}
-        self.map.add_player(player_data)
+        self.map.add_hero_spawn(player_data)
 
     def process_hero_swap(self, data):
 
-        hero_data = {"time": data[2], "team_name": data[3], "player_name": data[4], "character_name": data[5], "character_swap": data[6]}
+        hero_data = {"time": data[2], "team_name": data[3], "player_name": data[4], "character_name": data[6], "character_swap": data[5]}
         self.map.add_hero_swap(hero_data)
 
     def convert_timefile_to_datetime(self, time_string):

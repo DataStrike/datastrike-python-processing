@@ -15,10 +15,8 @@ class DatastrikePythonProcessing:
         self.config = configparser.ConfigParser()
         self.config.read("datastrike_python_processing.cfg")
 
-
         self.kafka_url = self.config["kafka"]["url"]
 
-        print(self.kafka_url)
         self.producer_thread = ProducerThread(self.kafka_url)
         
         self.consumer_thread = ConsumerThread(self.kafka_url)

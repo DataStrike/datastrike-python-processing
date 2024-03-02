@@ -46,7 +46,7 @@ class Map(Object):
             return -1
         else:
             self.rounds[self.actual_round].teams[data["team_name"]].add_player(
-                {"name": data["player_name"], "characters": {}})
+                {"name": data["player_name"], "characters": {}, "role": ""})
             # print("add player", data["player_name"])
             self.add_character(data)
             return 0
@@ -56,7 +56,7 @@ class Map(Object):
         if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
             return -2
         else:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deaths": [], "ultimate_charged": [], "ultimate_use": []})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deaths": [], "ultimate_charged": [], "ultimate_use": [], "role": ""})
 
         if len(self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time) > 0:
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time[-1]["end"] = data["time"]
@@ -111,11 +111,20 @@ class Map(Object):
     def add_hero_swap(self, data):
 
         self.add_player(data)
+
+        character_swap_dict = data.copy()
+        character_swap_dict["character_name"] = data["character_swap"]
+        self.add_character(character_swap_dict)
+
         if data["character_swap"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_played_time({"end": data["time"]})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_start_time({"start": data["time"]})
+        if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].add_end_time({"end": data["time"]})
 
         self.events.append({"type": "hero_swap", "timestamp": data["time"], "player": data["player_name"],
-                            "description": "{} swap on {}".format(data["player_name"], data["character_name"])})
+                            "description": "{} swap on {}".format(data["player_name"], data["character_swap"])})
+
+
     def create_if_player_and_caracter_not_exist(self, team, player_name, character_name):
 
         if not player_name in self.rounds[self.actual_round].teams[team].players:
@@ -167,10 +176,11 @@ class Map(Object):
         self.rounds[self.actual_round].end_time = data[2]
         for team in self.rounds[self.actual_round].teams:
             for player in self.rounds[self.actual_round].teams[team].players:
+
                 for character in self.rounds[self.actual_round].teams[team].players[player].characters:
                     if not "end" in self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]:
                         self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]["end"] = end_round_data["time"]
-
+                self.rounds[self.actual_round].teams[team].players[player].find_role()
 
         self.team1_score = end_round_data["team1_score"]
         self.team2_score = end_round_data["team2_score"]
