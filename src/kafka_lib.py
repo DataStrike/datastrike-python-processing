@@ -11,7 +11,7 @@ import time
 
 class ProducerThread(threading.Thread):
 
-    def __init__(self, url, date=None, nb_try_connection=10):
+    def __init__(self, url, date=None, nb_try_connection=30):
 
         threading.Thread.__init__(self)
 
@@ -79,7 +79,7 @@ class ProducerThread(threading.Thread):
         
 
 class ConsumerThread(threading.Thread):
-    def __init__(self, url,  date=None, nb_try_connection=10):
+    def __init__(self, url,  date=None, nb_try_connection=30):
 
         threading.Thread.__init__(self)
 
