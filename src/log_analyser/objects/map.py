@@ -259,5 +259,6 @@ class Map(Object):
                 if character_name in value:
                     return character_name
 
+
         print("Character name not found in english : ", character_name)
         return ""
