@@ -251,6 +251,14 @@ class Map(Object):
                 with open(file_path, 'r',  encoding='utf-8') as file:
                     data = json.load(file)
                     if character_name in data:
-                        return data[character_name]  # Retourne la valeur associée au nom du personnage
+                        return data[character_name]
+
+        with open("log_analyser/roles/roles.json", 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            for key, value in data.items():
+                if character_name in value:
+                    return character_name
+
+
         print("Character name not found in english : ", character_name)
         return ""
