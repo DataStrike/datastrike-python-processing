@@ -2,7 +2,8 @@ from log_analyser.objects.object import Object
 from log_analyser.objects.round import Round
 from log_analyser.objects.team import Team
 from datetime import datetime
-
+import os
+import json
 
 class Map(Object):
 
@@ -46,7 +47,7 @@ class Map(Object):
             return -1
         else:
             self.rounds[self.actual_round].teams[data["team_name"]].add_player(
-                {"name": data["player_name"], "characters": {}})
+                {"name": data["player_name"], "characters": {}, "role": ""})
             # print("add player", data["player_name"])
             self.add_character(data)
             return 0
@@ -56,7 +57,7 @@ class Map(Object):
         if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
             return -2
         else:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deaths": [], "ultimate_charged": [], "ultimate_use": []})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].add_character({"name": data["character_name"], "stats": {}, "played_time": [], "kills": [], "deaths": [], "ultimate_charged": [], "ultimate_use": [], "role": ""})
 
         if len(self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time) > 0:
             self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].played_time[-1]["end"] = data["time"]
@@ -111,11 +112,25 @@ class Map(Object):
     def add_hero_swap(self, data):
 
         self.add_player(data)
+
+        character_swap_dict = data.copy()
+        character_swap_dict["character_name"] = data["character_swap"]
+        self.add_character(character_swap_dict)
+
         if data["character_swap"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
-            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_played_time({"end": data["time"]})
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_swap"]].add_start_time({"start": data["time"]})
+        if data["character_name"] in self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters:
+            self.rounds[self.actual_round].teams[data["team_name"]].players[data["player_name"]].characters[data["character_name"]].add_end_time({"end": data["time"]})
 
         self.events.append({"type": "hero_swap", "timestamp": data["time"], "player": data["player_name"],
-                            "description": "{} swap on {}".format(data["player_name"], data["character_name"])})
+                            "description": "{} swap on {}".format(data["player_name"], data["character_swap"]), "hero": self.find_character_name_in_english(data["character_swap"])})
+
+    def add_hero_spawn(self, data):
+
+        self.add_player(data)
+        self.events.append({"type": "hero_spawn", "timestamp": data["time"], "player": data["player_name"],
+                            "description": "{} spawn with {}".format(data["player_name"], data["character_name"]), "hero": self.find_character_name_in_english(data["character_name"])})
+
     def create_if_player_and_caracter_not_exist(self, team, player_name, character_name):
 
         if not player_name in self.rounds[self.actual_round].teams[team].players:
@@ -132,7 +147,7 @@ class Map(Object):
         self.rounds[self.actual_round].teams[data[3]].players[data[4]].characters[data[5]].add_ultimate_start(ultimate_start_data)
 
         self.events.append({"type": "ultimate", "timestamp": data[2], "player": data[4],
-                            "description": "{} use {} ultimate".format(data[4], data[5])})
+                            "description": "{} use {} ultimate".format(data[4], data[5]), "hero": self.find_character_name_in_english(data[5])})
 
     def add_ultimate_end(self, data):
 
@@ -167,10 +182,11 @@ class Map(Object):
         self.rounds[self.actual_round].end_time = data[2]
         for team in self.rounds[self.actual_round].teams:
             for player in self.rounds[self.actual_round].teams[team].players:
+
                 for character in self.rounds[self.actual_round].teams[team].players[player].characters:
                     if not "end" in self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]:
                         self.rounds[self.actual_round].teams[team].players[player].characters[character].played_time[-1]["end"] = end_round_data["time"]
-
+                self.rounds[self.actual_round].teams[team].players[player].find_role()
 
         self.team1_score = end_round_data["team1_score"]
         self.team2_score = end_round_data["team2_score"]
@@ -221,3 +237,28 @@ class Map(Object):
                         players_data[player_name].append({"round": index, "stats": aggregated_stats})
 
         self.stats_graph = players_data
+
+    def find_character_name_in_english(self, character_name):
+
+        folder_path = "log_analyser/roles/lg/"
+        files = os.listdir(folder_path)
+
+        # Parcourir les fichiers
+        for file_name in files:
+            # Vérifier si le fichier est un fichier JSON
+            if file_name.endswith('.json'):
+                file_path = os.path.join(folder_path, file_name)
+                with open(file_path, 'r',  encoding='utf-8') as file:
+                    data = json.load(file)
+                    if character_name in data:
+                        return data[character_name]
+
+        with open("log_analyser/roles/roles.json", 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            for key, value in data.items():
+                if character_name in value:
+                    return character_name
+
+
+        print("Character name not found in english : ", character_name)
+        return ""
